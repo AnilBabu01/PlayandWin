@@ -1,0 +1,52 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.loginimg{
+
+    height: 48px;
+    width: 242px;
+}
+
+.contentdiv{
+    background-color: rgb(245, 245, 245);
+    padding: 25px;
+    width: 450px;
+}
+.imgcen{
+    justify-content: center;
+    display: flex;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    margin-top: 145px;
+}
+
+.cengoregister{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.cengoregister1{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+ 
+@media screen and (max-width: 780px) {
+   
+   
+.contentdiv{
+    background-color: rgb(245, 245, 245);
+    padding: 25px;
+    width:340px;
+}
+
+
+      }

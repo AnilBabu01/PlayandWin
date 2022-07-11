@@ -1,0 +1,36 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.winP {
+  margin: -30px;
+}
+.facebook1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.showpassworddsignup {
+  position: absolute;
+  left: 410px;
+  bottom: 3px;
+  list-style: none;
+}
+
+@media screen and (max-width: 780px) {
+  .showpassworddsignup {
+    position: absolute;
+    left: 320px;
+    bottom: 3px;
+    list-style: none;
+  }
+
+  .facebook1 {
+    margin-top: 146px;
+  }
+}
