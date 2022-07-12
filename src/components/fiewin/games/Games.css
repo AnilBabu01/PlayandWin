@@ -1,0 +1,36 @@
+.gameimg{
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+}
+.gamediv{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gamecen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 780px) {
+   
+    .gameimg{
+        width: 140px;
+        height: 140px;
+        margin: 5px;
+    }
+    .gamediv{
+        width: 300px;
+      
+    }
+    
+    
+  }
+    

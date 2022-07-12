@@ -25,7 +25,7 @@ const Login = () => {
                 </div>
              </div>
              <div className='facebook'>
-                <p>facebook</p>
+                <p>feedback</p>
              </div>
             
           </div>

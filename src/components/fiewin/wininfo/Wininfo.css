@@ -1,0 +1,19 @@
+.top-winersinfo {
+  top: 0;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  width: 500px;
+}
+
+
+
+@media screen and (max-width: 780px) {
+   
+  .top-winersinfo {
+    top: 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    width: 100%;
+  }
+  
+  
+}
+  

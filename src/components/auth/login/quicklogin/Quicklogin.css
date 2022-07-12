@@ -8,17 +8,17 @@
 .num {
   position: absolute;
   left: 15px;
-  top: -8px;
+  top: -9px;
   color: black;
   font-weight: 600;
-  width: 20%;
-  height: 1%;
+  width: 20%!important;
+  height: 1%!important;
 }
 
 .num1 {
   position: absolute;
   left: 15px;
-  top: 5px;
+  top: 7px;
   color: black;
   font-weight: 600;
   width: 20%;

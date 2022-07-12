@@ -1,0 +1,92 @@
+.centerpointsinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.posbtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.rechargebtn {
+  background-image: linear-gradient(
+    to right,
+    rgb(52, 117, 245),
+    rgb(11, 197, 244)
+  );
+  box-shadow: rgb(46 129 245 / 42%) 0px 0px 6px;
+  transition-duration: 0.25s;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.withdrawbtn {
+  background-color: rgb(237, 237, 237);
+  transition-duration: 0.25s;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: black;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.text1{
+  margin-top: 2px;
+  margin-bottom: 0px;
+  color: gray;
+}
+.text2{
+  margin-bottom: 0px;
+    margin-top: 2px;
+}
+.checkcenter {
+  display: flex;
+}
+
+.imgsizes {
+  width: 55px;
+  height: 55px;
+}
+
+.imgsizes1 {
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+}
+
+.textim {
+  margin-left: 17px;
+  font-weight: 600;
+}
+
+.textim1 {
+  font-weight: 600;
+}
+
+.subtext{
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 780px) {
+     
+.textim {
+  margin-left: 1px;
+  font-weight: 600;
+}
+  
+.imgsizes1 {
+  width: 55px;
+  height: 55px;
+ margin-right: 5px;
+}
+    
+  }

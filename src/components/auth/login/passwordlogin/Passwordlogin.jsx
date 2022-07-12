@@ -2,8 +2,10 @@ import React,{useState} from 'react'
 import LockIcon from "@material-ui/icons/Lock";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import VisibilityIcon from "@material-ui/icons/Visibility";
+import { useNavigate } from "react-router-dom";
 const Passwordlogin = () => {
     const [showpropress, setshowpropress] = useState(false);
+    let navigate = useNavigate();
   return (
     <>
      <div>
@@ -31,7 +33,7 @@ const Passwordlogin = () => {
               </div>
            
           <div>
-            <button className="logbtn">Login</button>
+            <button onClick={() => navigate("/fiewin")} className="logbtn">Login</button>
           </div>
         </form>
       </div>

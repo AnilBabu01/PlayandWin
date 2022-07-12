@@ -65,7 +65,7 @@ const Signup = () => {
             </div>
           </div>
           <div className="facebook1">
-            <p>facebook</p>
+            <p>feedback</p>
           </div>
         </div>
       </div>
