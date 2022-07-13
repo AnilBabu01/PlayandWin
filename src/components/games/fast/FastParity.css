@@ -1,0 +1,173 @@
+.center-nav {
+  display: flex;
+
+  align-items: center;
+}
+
+.fixed {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.allcenter {
+  display: flex;
+  justify-content: center;
+}
+.parity {
+  background-color: rgb(0, 147, 255);
+  color: white;
+  padding: 10px;
+  padding-left: 35;
+  padding-right: 35px;
+  padding-left: 35px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parity1 {
+  color: rgb(0, 147, 255);
+  padding: 17px;
+  padding-left: 35;
+  padding-right: 60px;
+  padding-left: 60px;
+  font-weight: 600;
+  border-right: 1px solid;
+  background-color: white;
+}
+
+.fastimgg {
+  height: 34px;
+  width: 28px;
+}
+
+.rule-left {
+  border-bottom: 1px solid gray;
+  padding: 17px;
+  background-color: white;
+}
+.rulediv {
+  display: flex;
+}
+
+.center-arrow {
+  border-bottom: 1px solid gray;
+  padding: 15p;
+  padding: 12px;
+  background-color: white;
+}
+.cenperiod {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.coutdown {
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(241, 243, 255);
+  border-bottom: 4px solid #cdd4ff;
+  padding: 0 4px;
+  color: #383b45;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin: 0 2px;
+  height: 32px;
+  width: 26px;
+  line-height: 32px;
+  border-radius: 4px;
+}
+
+.Cout {
+  color: #979797;
+  font-size: 18px;
+
+  padding-left: 35px;
+}
+
+.per {
+  color: #979797;
+  font-size: 18px;
+}
+.pernum {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 194, 130);
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+  font-weight: 500;
+  margin: 2px;
+  height: 50px;
+}
+
+.voilet {
+  display: flex;
+  align-items: center;
+  background-color: rgb(102, 85, 211);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+  font-weight: 500;
+  height: 40px;
+}
+
+.red {
+  background-color: rgb(250, 60, 9);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  height: 40px;
+}
+
+.blow {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+
+.tablenum {
+  width: 80px;
+  height: 44px;
+  margin: 5px;
+}
+
+.scrollbar-indiv {
+ 
+  height: 700px;
+  margin-top: 56px;
+}
+
+@media screen and (max-width: 780px) {
+  .parity {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .parity1 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .tablenum {
+    width: 62px;
+    height: 44px;
+    margin: 5px;
+  }
+}
