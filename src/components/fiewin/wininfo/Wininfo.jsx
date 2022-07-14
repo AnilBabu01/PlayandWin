@@ -1,10 +1,11 @@
 import React from "react";
+import Textsilider from "./Textsilider";
 import "./Wininfo.css";
 const Wininfo = () => {
   return (
     <>
       <div className="top-winersinfo">
-        <h2 style={{margin:"0px"}}>here you can see the info </h2>
+        <Textsilider/>
       </div>
     </>
   );
