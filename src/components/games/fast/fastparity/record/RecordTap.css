@@ -1,0 +1,143 @@
+.container1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 460px;
+    height: 300px;
+    margin: 30px auto 0;
+    word-break: break-all;
+    margin-top: 0px;
+  }
+  
+  .fasti{
+      height: 30px;
+  }
+  .center-arrow2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid gray;
+      border-right: 1px solid blue;
+      padding-right: 30px;
+      padding-left: 5px;
+  }
+  
+  .rule-left1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid gray;
+      border-left: 1px solid blue;
+      padding-left: 5px;
+  }
+  
+  .ruleleft{
+      margin-left: 5px;
+  }
+  .bloc-tabs2 {
+      display: flex;
+     
+      background: white;
+      width: 460px;
+  }
+  .tabs4 {
+      height: 48px;
+      text-align: center;
+      width: 30%;
+      background-color: white;
+      cursor: pointer;
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+      font-size: 15px;
+      font-weight: 600;
+      color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-top: 1px solid gray;
+  }
+  
+  .tabs3 {
+    height: 48px;
+    text-align: center;
+    width: 30%;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 2px solid blue;
+    border-right: 1px solid gray;
+    background: white;
+  }
+  
+  button {
+    border: none;
+  }
+  .content-tabs {
+    flex-grow: 1;
+  }
+  .content {
+    display: none;
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }
+  
+@media screen and (max-width: 780px) {
+  .container {
+    width: 340px;
+    margin-left: -2px;
+  }
+
+  .mobilewidth{
+    width: 350px!important;
+  }
+
+  .bloc-tabs2 {
+   
+    background: white;
+    width: 360px!important;
+}
+.tabs3{
+    height: 38px;
+    
+    width: 25%;
+    
+}
+
+.tabs4 {
+  height: 38px;
+ 
+  width: 25%;
+ 
+}
+
+}
+
+  

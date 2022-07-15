@@ -1,6 +1,11 @@
 .center-nav {
   display: flex;
-
+  margin-top: 15px;
+  align-items: center;
+}
+.center-nav {
+  display: flex;
+  margin-top: 15px;
   align-items: center;
 }
 
@@ -40,7 +45,7 @@
 }
 
 .fastimgg {
-  height: 34px;
+  height: 30px;
   width: 28px;
 }
 
@@ -63,7 +68,6 @@
   display: flex;
   width: 450px;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .coutdown {
@@ -81,6 +85,12 @@
   width: 26px;
   line-height: 32px;
   border-radius: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.countset {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .Cout {
@@ -88,15 +98,25 @@
   font-size: 18px;
 
   padding-left: 35px;
+  width: auto !important;
+  height: auto !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .per {
   color: #979797;
   font-size: 18px;
+  width: auto !important;
+  height: auto !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .pernum {
   font-size: 24px;
   font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .join {
@@ -150,7 +170,6 @@
 }
 
 .scrollbar-indiv {
- 
   height: 700px;
   margin-top: 56px;
 }
@@ -166,13 +185,46 @@
   }
 
   .tablenum {
-    width: 62px;
+    width: 61.5px;
     height: 44px;
     margin: 5px;
   }
-
+.mo{
+  margin-left: -8px!important;
+}
   .allcenter {
     display: block;
-    
   }
+
+  .cenperiod {
+    display: flex;
+    width: 355px;
+    justify-content: space-between;
+  }
+  
+  .join {
+   
+    padding: 4px;
+ 
+    margin: 2px;
+    height: 42px;
+  }
+  
+  .voilet {
+   
+    padding: 5px;
+    
+   
+    font-weight: 500;
+    height: 40px;
+  }
+  
+  .red {
+   
+    padding: 8px;
+    
+    margin: 2px;
+    height: 35px;
+  }
+  
 }
