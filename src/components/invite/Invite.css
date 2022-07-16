@@ -130,6 +130,15 @@ h2 {
   align-items: center;
   width: 500px;
 }
+.more-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-div img{
+  width: 10px;
+  margin-left: 10px;
+}
 
 @media screen and (max-width: 780px) {
   .invite-text {

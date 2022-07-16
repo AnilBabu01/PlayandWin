@@ -63,8 +63,9 @@ const Invite = () => {
               <div>
                 <p>Income details</p>
               </div>
-              <div>
-                <p style={{ color: "gray" }}>More</p>
+              <div className="more-div">
+                <p style={{ color: "gray" }}>More</p>{" "}
+                <img  src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png" alt="arroww" />
               </div>
             </div>
 

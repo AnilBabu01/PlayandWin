@@ -1,0 +1,101 @@
+.my-div {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 5px;
+}
+.my-div p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.modify-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 18px solid #ada3a3;
+}
+
+.id-div p,
+h2 {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+}
+.avtar-div {
+  display: flex;
+  align-items: center;
+}
+.modify-divv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modify-divv p {
+  color: gray;
+}
+
+.modify-divv img {
+  width: 12px;
+  margin-left: 10px;
+}
+.order-main-div {
+  border-bottom: 18px solid #ada3a3;
+}
+.option-man {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #ada3a3;
+}
+.option-man1 {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  padding: 5px;
+}
+.option-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option-icon-div p {
+  margin-left: 15px;
+  color: gray;
+}
+.arrowcenter-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ada3a3;
+  height: 100px;
+}
+.logout-div p {
+  color: rgb(46, 39, 39);
+}
+
+@media screen and (max-width: 780px) {
+  .my-div {
+    width: 300px;
+    padding: 5px;
+  }
+  .option-man {
+    width: 300px;
+    padding: 5px;
+  }
+  .option-man1 {
+    width: 300px;
+    padding: 5px;
+  }
+}
