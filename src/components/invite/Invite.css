@@ -1,0 +1,170 @@
+.invite-text {
+  background: black;
+  color: white;
+  width: 510px;
+  margin-top: -20;
+  /* margin-top: -20px; */
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  position: fixed;
+}
+.invite-text p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.imgdiv {
+  padding: 20px;
+  background-image: url(https://res.cloudinary.com/fiewin1/image/upload/images/proxyBg.png);
+  height: 260px;
+  background-size: contain;
+  width: 470px;
+}
+
+.withdiv {
+  display: flex;
+  background: white;
+  padding: 10px;
+  justify-content: space-between;
+  height: 45p;
+  border-radius: 5px;
+  margin-top: 30px;
+  height: 65px;
+  align-items: center;
+}
+.withdiv p,
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.withbtn {
+  border: none;
+  box-shadow: rgb(252 148 13 / 60%) 0px 0px 10px;
+  background-color: rgb(252, 148, 13);
+  width: 140px;
+  height: 45px;
+  border-radius: 22px;
+  color: white;
+  font-weight: 600;
+}
+.linkimg {
+  width: 155px;
+}
+
+.linkdiv {
+  margin-top: 38px;
+}
+
+.agentimg {
+  width: 480px;
+  margin-top: 20px;
+}
+
+.invitedivv {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.todaydiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.todaydiv p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: gray;
+}
+
+.totalcen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.totalcen img {
+  margin-left: 5px;
+}
+
+.invitelinkdiv {
+  border-top: 15px solid gray;
+  margin-bottom: 80px;
+  padding: 15px;
+}
+.incom-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.invite-now-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.invite-now-div p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.invitebtn {
+  border: none;
+  box-shadow: rgb(252 148 13 / 60%) 0px 0px 10px;
+  background-color: rgb(252, 148, 13);
+  width: 180px;
+  height: 35px;
+  border-radius: 22px;
+  color: white;
+  font-weight: 600;
+}
+
+.agent-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+@media screen and (max-width: 780px) {
+  .invite-text {
+    width: 365px;
+    margin-top: -20;
+    height: 35px;
+  }
+
+  .imgdiv {
+    padding: 20px;
+
+    height: 260px;
+
+    width: 320px;
+  }
+  .incom-details {
+    justify-content: space-around;
+  }
+  .agentimg {
+    width: 280px;
+    margin-top: 20px;
+  }
+
+  .linkimg {
+    width: 105px;
+    margin-top: 38px;
+  }
+
+  .invitelinkdiv {
+    border-top: 15px solid gray;
+    margin-bottom: 80px;
+    padding: 1px;
+  }
+
+  .agent-img-div {
+    width: 340px;
+  }
+}
