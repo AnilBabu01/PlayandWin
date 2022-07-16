@@ -1,0 +1,132 @@
+.help-div {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  align-items: center;
+
+  margin-bottom: 5p;
+}
+
+.help-div p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: gray;
+  padding: 15px;
+}
+
+.blance-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blance-div p {
+  margin-bottom: 0px;
+  color: gray;
+}
+
+.input-div {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.input-div h2 {
+  font-size: 30px;
+}
+
+.input-div input {
+  border: none;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.input-div input:focus {
+  outline: none;
+}
+
+.amout-div {
+  padding: 10px;
+}
+.amout-div h2 {
+
+  margin-bottom: 0px !important;
+  font-size: 18px;
+}
+
+.btn-recharge-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.btn-recharge-div button {
+  width: 145px;
+  height: 44px;
+  border-radius: 5px;
+}
+.btn-recharge-div button:focus {
+  background-color: rgb(245, 177, 89);
+}
+
+.recharge-btn {
+  box-shadow: rgb(0 147 255) 0px 0px 5px;
+  background-color: rgb(0, 147, 255);
+  width: 450px;
+  height: 37px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.recharbtn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.security-icon-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.security-icon-div img {
+  width: 90px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .help-div {
+    width: 360px;
+    margin-bottom: 5p;
+  }
+
+  .btn-recharge-div button {
+    width: 105px;
+    height: 44px;
+    border-radius: 5px;
+  }
+
+  .recharge-btn {
+    width: 250px;
+    height: 37px;
+  }
+
+  .security-icon-div img {
+    width: 100px;
+    margin: 10px;
+  }
+  
+.btn-recharge-div {
+    width: 334px;
+  }
+  .input-div{
+    width: 338px;
+  }
+  .input-div input {
+   
+    margin-left: 20px;
+    width: 200px;
+}
+}
