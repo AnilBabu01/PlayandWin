@@ -4,16 +4,31 @@ import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import { useNavigate } from "react-router-dom";
 const Passwordlogin = () => {
-    const [showpropress, setshowpropress] = useState(false);
     let navigate = useNavigate();
+    const [showpropress, setshowpropress] = useState(false);
+    const [credentials, setCredentials] = useState({
+      number: "",
+      password: "",
+    });
+  
+  const {number,password}= credentials; 
+    const onChange = (e) => {
+      setCredentials({ ...credentials, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+       console.log("login data is ",number,password)
+  
+    };
   return (
     <>
      <div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="numberdiv">
              <span className="num1">+91</span>
              
-            <input className="inputlog" type="text" placeholder="Input Mobile Phone Number" />
+            <input className="inputlog" onChange={onChange} value={number} name="number" type="text" placeholder="Input Mobile Phone Number" />
           </div>
           <div className="numberdiv">
                 <span className="num1">
@@ -21,6 +36,9 @@ const Passwordlogin = () => {
                 </span>
                 <input
                   className="inputlog"
+                  name="password"
+                  value={password}
+                  onChange={onChange}
                   type={showpropress ? "text" : "password"}
                   placeholder="Password (>/Charectors)"
                 />

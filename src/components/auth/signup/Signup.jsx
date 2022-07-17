@@ -50,7 +50,7 @@ const Signup = () => {
               </div>
 
               <div>
-                <button className="logbtn">Login</button>
+                <button className="logbtn">Register</button>
               </div>
             </form>
           </div>

@@ -7,7 +7,7 @@
 }
 
 .winP {
-  margin: -30px;
+  margin: 0px;
 }
 .facebook1 {
   display: flex;
@@ -25,7 +25,7 @@
 @media screen and (max-width: 780px) {
   .showpassworddsignup {
     position: absolute;
-    left: 320px;
+    left: 300px;
     bottom: 3px;
     list-style: none;
   }
@@ -33,4 +33,13 @@
   .facebook1 {
     margin-top: 146px;
   }
+  .register {
+    
+    margin-top: 25px;
+  }
+  
+.winP {
+  margin: -5px;
+}
+  
 }
