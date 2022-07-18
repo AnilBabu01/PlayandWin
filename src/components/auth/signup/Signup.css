@@ -5,7 +5,19 @@
   flex-direction: column;
   margin-top: 55px;
 }
-
+.form-divv{
+  position: relative;
+}
+.otpbtn-div{
+  position: absolute;
+    bottom: 122px;
+    left: 218px;
+}
+.otpbtn-div1{
+  position: absolute;
+    bottom: 62px;
+    left: 218px;
+}
 .winP {
   margin: 0px;
 }
@@ -25,7 +37,7 @@
 @media screen and (max-width: 780px) {
   .showpassworddsignup {
     position: absolute;
-    left: 300px;
+    left: 280px;
     bottom: 3px;
     list-style: none;
   }
@@ -40,6 +52,18 @@
   
 .winP {
   margin: -5px;
+}
+
+.otpbtn-div{
+  position: absolute;
+  bottom: 124px;
+  left: 168px;
+}
+
+.otpbtn-div1{
+  position: absolute;
+  bottom: 62px;
+  left: 195px;
 }
   
 }

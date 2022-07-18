@@ -1,7 +1,7 @@
 .main{
     display: flex;
     justify-content: center;
-    align-items: center;
+   
    
 }
 .loginimg{
@@ -45,7 +45,13 @@
 .contentdiv{
     background-color: rgb(245, 245, 245);
     padding: 25px;
-    width:340px;
+    width:310px;
+}
+  
+.contentdiv1{
+    background-color: rgb(245, 245, 245);
+    padding: 25px;
+    width:310px;
 }
 
 

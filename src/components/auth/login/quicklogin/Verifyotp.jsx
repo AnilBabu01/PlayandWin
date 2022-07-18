@@ -1,24 +1,18 @@
-import React from 'react'
-import './Quicklogin.css'
-const Verifyotp = () => {
+import React from "react";
+import "./Quicklogin.css";
+const Verifyotp = ({number}) => {
+ const getotp=()=>{
+  console.log(number)
+ }
   return (
     <>
       <div>
-        <form>
-            <div className='otpdiv'>
-            <input className='otpinput' type='text' placeholder='Input verification Code'/>
-            <button className='otpbtn'>Get Verifucation Code</button>
-            </div>
-           
-        </form>
+       
+          <button onClick={getotp} className="otpbtn">Get Verifucation Code</button>
+    
       </div>
-    
-    
-    
-    
-    
     </>
-  )
-}
+  );
+};
 
-export default Verifyotp
+export default Verifyotp;
