@@ -1,0 +1,45 @@
+.alert-div{
+    background-color:gray;
+    position: absolute;
+    left: 75px;
+    top: 0px;
+    z-index: 1;
+    width: 70%;
+    
+    opacity: 0.9;
+    border-radius: 5px;
+}
+.alert-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert-text p{
+   
+   
+    color: white;
+}
+
+.hidee{
+    display: none;
+}
+
+ 
+@media screen and (max-width: 780px) {
+   
+    .alert-div{
+        background-color:gray;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        width: 100%;
+        
+        opacity: 0.9;
+        border-radius: 5px;
+    }
+    
+    
+ }
+    
+

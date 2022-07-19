@@ -18,6 +18,11 @@
     bottom: 62px;
     left: 218px;
 }
+.otpbtn-div2{
+  position: absolute;
+  bottom: 185px;
+  left: 215px;
+}
 .winP {
   margin: 0px;
 }
@@ -65,5 +70,9 @@
   bottom: 62px;
   left: 195px;
 }
-  
+.otpbtn-div2{
+  position: absolute;
+  bottom: 185px;
+  left: 168px;
+}
 }

@@ -3,6 +3,8 @@ import LockIcon from "@material-ui/icons/Lock";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Alert from "../../../Alert/Alert";
 import axios from "axios";
 const Passwordlogin = () => {
   let navigate = useNavigate();
@@ -11,7 +13,8 @@ const Passwordlogin = () => {
     number: "",
     password: "",
   });
-
+  const [sms, setsms] = useState("");
+  const [showalert, setshowalert] = useState(false);
   const { number, password } = credentials;
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
@@ -19,25 +22,45 @@ const Passwordlogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if(number&&password)
-    {
-
-      const response = await axios.post(
-        "https://v1.fiewin.luckywin999.in/api/login",
-        {
-            mobile_no : number,
-            password : password
+    try {
+      if (number && password) {
+        const response = await axios.post(
+          "https://v1.fiewin.luckywin999.in/api/login",
+          {
+            mobile_no: number,
+            password: password,
+          }
+        );
+        if (response.data.status === true) {
+          setsms("you have login Successfully");
+          setshowalert(true);
           
+          setTimeout(() => {
+            navigate("/fiewin")
+            setshowalert(false);
+          }, 2000);
         }
-      );
-      console.log("red data ",response)
+        if (response.data.status === false) {
+          setsms("Enter Valid Credentials");
+          setshowalert(true);
+
+          setTimeout(() => {
+            setshowalert(false);
+          }, 2000);
+        }
+
+        console.log("red data ", response.data);
+
+        
+      }
+    } catch (error) {
+      setsms("Internal server error");
+      setshowalert(true);
 
       setTimeout(() => {
-        navigate("/fiewin")
+        setshowalert(false);
       }, 2000);
-     
     }
-   
   };
   return (
     <>
@@ -55,6 +78,7 @@ const Passwordlogin = () => {
               placeholder="Input Mobile Phone Number"
             />
           </div>
+          <Alert sms={sms} showalert={showalert} />
           <div className="numberdiv">
             <span className="num1">
               <LockIcon />
@@ -76,11 +100,10 @@ const Passwordlogin = () => {
           </div>
 
           <div>
-            <button  className="logbtn">
-              Login
-            </button>
+            <button className="logbtn">Login</button>
           </div>
         </form>
+        <Link to="/reset-password">Reset Password</Link>
       </div>
     </>
   );

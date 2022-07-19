@@ -1,25 +1,23 @@
 import React, { useState } from "react";
-import Verifyotp from "../login/quicklogin/Verifyotp";
+import axios from "axios";
+import Resetotp from "./Resetotp";
 import LockIcon from "@material-ui/icons/Lock";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import VisibilityIcon from "@material-ui/icons/Visibility";
-import axios from "axios";
 import { Link } from "react-router-dom";
-import Alert from "../../Alert/Alert";
-import "./Signup.css";
-import { useNavigate } from "react-router-dom";
-import "../login/quicklogin/Quicklogin.css";
-const Signup = () => {
-  let navigate = useNavigate();
+import Alert from "../../../Alert/Alert";
+const Resetpassword = () => {
   const [showpropress, setshowpropress] = useState(false);
+  const [showconfirmpassword, setshowconfirmpassword] = useState(false);
   const [credentials, setCredentials] = useState({
     number: "",
     otpcode: "",
     password: "",
+    confirmpassword: "",
   });
   const [sms, setsms] = useState("");
   const [showalert, setshowalert] = useState(false);
-  const { otpcode, number, password } = credentials;
+  const { otpcode, number, password, confirmpassword } = credentials;
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
@@ -27,44 +25,33 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const { otpcode, number, password } = credentials;
-      if ((otpcode, number, password)) {
-        const response = await axios.put(
-          "https://v1.fiewin.luckywin999.in/api/verifyOtpAndRegister",
-          {
-            mobile_no: number,
-            password: password,
-            otp: otpcode,
-          }
-        );
-        if (response.data.status === true) {
-          setsms("you have Register Successfully");
-          setshowalert(true);
-
-          setTimeout(() => {
-            navigate("/login");
-            setshowalert(false);
-          }, 2000);
-        }
-        if (response.data.status === false) {
-          setsms("Enter Valid otp");
-          setshowalert(true);
-
-          setTimeout(() => {
-            setshowalert(false);
-          }, 2000);
-        }
-        console.log("red data ", response);
+    const { otpcode, number, password, confirmpassword } = credentials;
+    const response = await axios.post(
+      "https://v1.fiewin.luckywin999.in/api/VerifyOtpAndChangePassword",
+      {
+        mobile_no: number,
+        otp: otpcode,
+        confirmPassword: confirmpassword,
+        newPassword: password,
       }
-    } catch (error) {
-      setsms("Internal server errror");
+    );
+    if (response.data.status === true) {
+      setsms("Your Password Chnaged Successfully");
       setshowalert(true);
 
       setTimeout(() => {
         setshowalert(false);
       }, 2000);
     }
+    if (response.data.status === false) {
+      setsms("Enter Valid OTP");
+      setshowalert(true);
+
+      setTimeout(() => {
+        setshowalert(false);
+      }, 2000);
+    }
+    console.log("red data ", response.data);
   };
 
   return (
@@ -76,12 +63,10 @@ const Signup = () => {
               {/* < img src={login} className='loginimg' alt='login'/>
                */}
               <p className="winP">Fiewin</p>
-              <h2 className="imgtext">Register</h2>
+              <h2 className="imgtext">Reset Password</h2>
             </div>
           </div>
-
           <div className="form-divv">
-           
             <form onSubmit={handleSubmit}>
               <div className="numberdiv">
                 <span className="num1">+91</span>
@@ -116,7 +101,7 @@ const Signup = () => {
                   name="password"
                   className="inputlog"
                   type={showpropress ? "text" : "password"}
-                  placeholder="Password (>/Charectors)"
+                  placeholder="New Password"
                 />
                 <li
                   className="showpassworddsignup"
@@ -125,13 +110,36 @@ const Signup = () => {
                   {showpropress ? <VisibilityIcon /> : <VisibilityOffIcon />}
                 </li>
               </div>
+              <div className="numberdiv">
+                <span className="num1">
+                  <LockIcon />
+                </span>
+                <input
+                  onChange={onChange}
+                  value={confirmpassword}
+                  name="confirmpassword"
+                  className="inputlog"
+                  type={showconfirmpassword ? "text" : "password"}
+                  placeholder="Confirm New Password"
+                />
+                <li
+                  className="showpassworddsignup"
+                  onClick={() => setshowconfirmpassword(!showconfirmpassword)}
+                >
+                  {showconfirmpassword ? (
+                    <VisibilityIcon />
+                  ) : (
+                    <VisibilityOffIcon />
+                  )}
+                </li>
+              </div>
 
               <div>
-                <button className="logbtn">Register</button>
+                <button className="logbtn">Reset</button>
               </div>
             </form>
-            <div className="otpbtn-div">
-              <Verifyotp
+            <div className="otpbtn-div2">
+              <Resetotp
                 number={number}
                 setsms={setsms}
                 setshowalert={setshowalert}
@@ -157,4 +165,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Resetpassword;
