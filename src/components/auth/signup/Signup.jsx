@@ -3,6 +3,7 @@ import Verifyotp from "../login/quicklogin/Verifyotp";
 import LockIcon from "@material-ui/icons/Lock";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import VisibilityIcon from "@material-ui/icons/Visibility";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 import "../login/quicklogin/Quicklogin.css";
@@ -23,8 +24,15 @@ const Signup = () => {
 
  
     const { otpcode, number, password} = credentials;
-
-    console.log("red data ", otpcode, number, password)
+    const response = await axios.put(
+      "https://v1.fiewin.luckywin999.in/api/verifyOtpAndRegister",
+      {
+          mobile_no : number,
+          password : password,
+          otp : otpcode
+      }
+    );
+    console.log("red data ",response)
   
   };
 

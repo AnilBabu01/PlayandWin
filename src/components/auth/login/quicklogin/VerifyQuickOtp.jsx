@@ -1,12 +1,13 @@
 import React from "react";
 import "./Quicklogin.css";
 import axios from "axios";
-const Verifyotp = ({ number }) => {
+
+const VerifyQuickOtp = ({number}) => {
   
   axios.defaults.xsrfCookieName = 'csrftoken'
   const getotp = async () => {
     const response = await axios.post(
-      "https://v1.fiewin.luckywin999.in/api/register",
+      "https://v1.fiewin.luckywin999.in/api/quick-login",
       {
         mobile_no: number,
       }
@@ -22,6 +23,6 @@ const Verifyotp = ({ number }) => {
       </div>
     </>
   );
-};
+}
 
-export default Verifyotp;
+export default VerifyQuickOtp

@@ -3,6 +3,7 @@ import LockIcon from "@material-ui/icons/Lock";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 const Passwordlogin = () => {
   let navigate = useNavigate();
   const [showpropress, setshowpropress] = useState(false);
@@ -21,12 +22,22 @@ const Passwordlogin = () => {
     if(number&&password)
     {
 
+      const response = await axios.post(
+        "https://v1.fiewin.luckywin999.in/api/login",
+        {
+            mobile_no : number,
+            password : password
+          
+        }
+      );
+      console.log("red data ",response)
+
       setTimeout(() => {
         navigate("/fiewin")
       }, 2000);
      
     }
-    console.log("login data is ", number, password);
+   
   };
   return (
     <>

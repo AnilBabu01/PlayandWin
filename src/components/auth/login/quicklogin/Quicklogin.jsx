@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import Verifyotp from "./Verifyotp";
+import VerifyQuickOtp from "./VerifyQuickOtp";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import "./Quicklogin.css";
 const Quicklogin = () => {
   let navigate = useNavigate();
@@ -21,6 +22,14 @@ const Quicklogin = () => {
         if(number&&otpcode)
         {
 
+          const response = await axios.post(
+            "https://v1.fiewin.luckywin999.in/api/quickLoginPro",
+            {
+              mobile_no: number,
+              otp : otpcode
+            }
+          );
+          console.log(number, response);
           setTimeout(() => {
             navigate("/fiewin")
           }, 2000);
@@ -59,7 +68,7 @@ const Quicklogin = () => {
           </div>
         </form>
          <div className="otpbtn-div1">
-            <Verifyotp  number={number} />
+            <VerifyQuickOtp  number={number} />
             </div>
       </div>
     </>
