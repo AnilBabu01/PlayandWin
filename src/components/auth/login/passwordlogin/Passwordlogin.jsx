@@ -48,7 +48,7 @@ const Passwordlogin = () => {
             setshowalert(false);
           }, 2000);
         }
-
+        localStorage.setItem("tokenAuth",response.data.token);
         console.log("red data ", response.data);
 
         

@@ -46,14 +46,11 @@ const Quicklogin = () => {
             setshowalert(false);
           }, 2000);
         }
-        console.log(number, response.data.msg);
+        localStorage.setItem("tokenAuth",response.data.token);
+        console.log(number, response.data.token);
        
       }
-      console.log("log data ", number, otpcode);
-
-
-
-    } catch (error) {
+     } catch (error) {
       setsms("Internal server error");
       setshowalert(true);
 

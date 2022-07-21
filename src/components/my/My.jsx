@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import BottomNavBar from "../boottomnavbar/BoottomNavbar";
 import Avatar from "@material-ui/core/Avatar";
 import order from "../../images/orderIcon.png";
@@ -6,11 +6,29 @@ import intro from "../../images/introductionIcon.png";
 import mail from "../../images/mailIcon.png";
 import share from "../../images/shareIcon.png";
 import details from "../../images/detailIcon.png";
+import Alert from "../Alert/Alert";
+import { useNavigate } from "react-router-dom";
 import "./My.css";
 const My = () => {
-  return (
+  const navigate = useNavigate();
+  const [sms, setsms] = useState("");
+  const [showalert, setshowalert] = useState(false);
+  const logout=()=>{
+    localStorage.removeItem("tokenAuth");
+    setshowalert(true); 
+    setsms("you have login Successfully");
+    setTimeout(() => {
+    setshowalert(false); 
+    navigate("/")
+    }, 2000);
+  }
+return (
     <>
       <div className="maindivman">
+      <div className="alert-div-my">
+      
+      </div>
+     
         <div>
           <div className="my-div">
             <p>My</p>
@@ -37,6 +55,7 @@ const My = () => {
               />
             </div>
           </div>
+        
           <div className="order-main-div">
             <div className="option-man">
               <div className="option-icon-div">
@@ -53,6 +72,7 @@ const My = () => {
               <div className="option-icon-div">
                 <img src={details} alt="order" /> <p>Financial Details</p>
               </div>
+          
               <div className="arrowcenter-div">
                 <img
                   src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
@@ -96,7 +116,8 @@ const My = () => {
               </div>
             </div>
           </div>
-          <div className="logout-div">
+          <div onClick={logout} className="logout-div">
+          <Alert sms={sms} showalert={showalert} />
             <p>Logout</p>
           </div>
           <BottomNavBar name="my" />

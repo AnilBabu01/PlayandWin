@@ -23,12 +23,12 @@
 @media screen and (max-width: 780px) {
    
     .gameimg{
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 150px;
         margin: 5px;
     }
     .gamediv{
-        width: 300px;
+          width: 360px;
       
     }
     
