@@ -1,0 +1,127 @@
+.task-main {
+  width: 450px;
+}
+.task-top {
+  display: flex;
+  height: 45px;
+  border-bottom: 1px solid gray;
+  align-items: center;
+}
+
+.task-midle {
+    margin-left: 37%;
+}
+.scroll {
+  width: 450px;
+  height: 610px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+.task-start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-start-btn button {
+  background-color: rgb(189, 227, 255);
+  border-color: rgb(220, 240, 255);
+  border-width: 10px;
+  margin-top: 16px;
+  transition-duration: 0s;
+  color: rgb(17, 130, 212);
+  width: 95%;
+  border: 10px solid rgb(220, 240, 255);
+  border-radius: 20px;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bottom-div {
+  border-bottom: 1px solid gray;
+  background: #e2deea;
+  height: 25px;
+  margin-top: 20px;
+}
+.img-div-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.img-div-task img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+.recharge-div-task {
+  display: flex;
+}
+
+.recharge-div-task1 p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: gray;
+  font-size: 11px;
+  margin-left: 5px;
+}
+.recharge-div-task1 h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.red-taks {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -5px;
+    color: red;
+}
+
+.main-meter{
+    background-color: rgb(228, 210, 210);
+    width: 95%;
+    height: 5px;
+    position: relative;
+}
+.mettter-top-div{
+    background-color: rgb(228, 210, 210);
+    width: 97%;
+    height: 5px;
+  
+    border-radius: 4px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percent-div{
+    display: flex;
+    justify-content: space-between;
+    word-break: 100%;
+    width: 97%;
+}
+.percent-div p{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    color: gray;
+}
+
+
+@media screen and (max-width: 780px) {
+    .scroll {
+        width: 450px;
+        height:880px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+      }
+      .mobile-main-task{
+        margin-left: 13px;
+      }
+        
+      }

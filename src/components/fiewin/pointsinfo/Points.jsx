@@ -1,8 +1,10 @@
 import React from "react";
-import "./Points.css";
 import Task from "../../../images/CheckV1.png";
 import Check from "../../../images/TaskV1.png";
+import {useNavigate} from 'react-router-dom';
+import "./Points.css";
 const Points = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="centerpointsinfo">
@@ -19,7 +21,7 @@ const Points = () => {
         </div>
       </div>
       <div className="centerpointsinfo">
-        <div className="checkcenter">
+        <div onClick={()=>navigate("/task")} className="checkcenter">
           <img className="imgsizes" src={Task} alt="task" />{" "}
           <p className="textim">Task reward</p>
         </div>

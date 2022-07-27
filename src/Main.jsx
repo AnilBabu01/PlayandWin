@@ -4,6 +4,7 @@ import Login from "./components/auth/login/Login";
 import Resetpassword from "./components/auth/login/passwordlogin/Resetpassword";
 import Signup from "./components/auth/signup/Signup";
 import Fiewin from "./components/fiewin/Fiewin";
+import Task from "./components/fiewin/taskreward/Task";
 import FastParityTap from "./components/games/fast/FastParityTap";
 import Invite from "./components/invite/Invite";
 import My from "./components/my/My";
@@ -23,6 +24,7 @@ const Main = () => {
           <Route path="/my" element={<My/>} />
           <Route path="/games/fast-parity" element={<FastParityTap/>} />
           <Route path="/reset-password" element={<Resetpassword/>} />
+          <Route path="/task" element={<Task/>} />
         </Routes>
         
       </BrowserRouter>
