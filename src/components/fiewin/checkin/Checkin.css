@@ -1,0 +1,128 @@
+.img-div-checkin{
+    background-image: url("https://res.cloudinary.com/fiewin/image/upload/images/CheckIn_bg.png");
+    width: 500px;
+    height: 657px;
+}
+
+.main-checkin{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.check-top {
+    display: flex;
+    height: 45px;
+    color: white;
+    align-items: center;
+  }
+  
+  .check-midle {
+      margin-left: 30%;
+  }
+
+  .main-coin{
+    height: 190px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    position: relative;
+  }
+
+  .coin-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-div-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+  }
+
+  .flex-div-icon p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .flex-div-icon img{
+    width: 50px;
+  }
+
+  .arrow-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gray{
+    color: gray;
+  }
+
+  .checkin-btn{
+    background-color: rgb(68, 219, 94);
+    transition-duration: 0s;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    margin-left: 23%;
+  }
+
+  .gift-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+  .gift-div img{
+    width: 400px;
+  }
+
+  .key-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .text-div{
+    width: 410px;
+  }
+  .text-div p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+  }
+  .text-div img{
+    width: 16px;
+  }
+
+  
+@media screen and (max-width: 780px) {
+  
+    .img-div-checkin{
+        width: 360px;
+    }
+    .gift-div img {
+        width: 200px;
+    }
+    .checkin-btn {
+      
+        margin-left: 13%;
+    }
+    .text-div {
+        width: 410px;
+    }
+
+}
+  

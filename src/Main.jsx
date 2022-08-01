@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/auth/login/Login";
 import Resetpassword from "./components/auth/login/passwordlogin/Resetpassword";
 import Signup from "./components/auth/signup/Signup";
+import Checkin from "./components/fiewin/checkin/Checkin";
+import Withdraw from "./components/fiewin/withdraw/Withdraw";
 import Fiewin from "./components/fiewin/Fiewin";
 import Task from "./components/fiewin/taskreward/Task";
 import FastParityTap from "./components/games/fast/FastParityTap";
@@ -25,6 +27,8 @@ const Main = () => {
           <Route path="/games/fast-parity" element={<FastParityTap/>} />
           <Route path="/reset-password" element={<Resetpassword/>} />
           <Route path="/task" element={<Task/>} />
+          <Route path="/check" element={<Checkin/>} />
+          <Route path="/withdraw" element={<Withdraw/>} />
         </Routes>
         
       </BrowserRouter>

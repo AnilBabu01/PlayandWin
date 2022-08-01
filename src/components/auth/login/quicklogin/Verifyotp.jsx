@@ -14,7 +14,15 @@ const Verifyotp = ({ number, setsms, setshowalert }) => {
         );
 
         if (response.data.status === false) {
-          setsms("Mobile No Already Exist");
+          setsms(response.data.msg);
+          setshowalert(true);
+
+          setTimeout(() => {
+            setshowalert(false);
+          }, 2000);
+        }
+        if (response.data.status === true) {
+          setsms(response.data.msg);
           setshowalert(true);
 
           setTimeout(() => {

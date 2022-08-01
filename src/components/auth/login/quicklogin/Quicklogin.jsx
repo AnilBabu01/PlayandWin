@@ -39,7 +39,7 @@ const Quicklogin = () => {
           }, 2000);
         }
         if (response.data.status === false) {
-          setsms("Enter Valid Credentials");
+          setsms(response.data.msg);
           setshowalert(true);
   
           setTimeout(() => {

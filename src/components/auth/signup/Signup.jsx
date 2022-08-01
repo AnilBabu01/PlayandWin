@@ -39,7 +39,7 @@ const Signup = () => {
           }
         );
         if (response.data.status === true) {
-          setsms("you have Register Successfully");
+          setsms(response.data.msg);
           setshowalert(true);
 
           setTimeout(() => {
@@ -48,7 +48,7 @@ const Signup = () => {
           }, 2000);
         }
         if (response.data.status === false) {
-          setsms("Enter Valid otp");
+          setsms(response.data.msg);
           setshowalert(true);
 
           setTimeout(() => {

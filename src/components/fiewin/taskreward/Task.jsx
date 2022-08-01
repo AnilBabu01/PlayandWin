@@ -1,7 +1,6 @@
 import React from "react";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { useNavigate } from "react-router-dom";
-import Effective from '../../../images/Effective.png';
 import learntask from '../../../images/Effective.png';
 import RechargeOrder from '../../../images/rechargeOrder.png';
 import task100 from '../../../images/task100orders.png';
@@ -17,7 +16,7 @@ const Task = () => {
         <div className="task-main">
           <div className="task-top">
             <ArrowBackIosIcon onClick={() => navigate("/fiewin")} style={{marginLeft: "15px"}} />
-            <h2 className="task-midle">Task</h2>
+            <h3 className="task-midle">Task</h3>
           </div>
           <div className="scroll">
                

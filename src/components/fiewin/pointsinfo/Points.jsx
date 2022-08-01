@@ -16,8 +16,8 @@ const Points = () => {
           <p className="text1">ID:5512279</p>
         </div>
         <div className="posbtn">
-          <button className="rechargebtn">Recharge</button>
-          <button className="withdrawbtn">Withdraw</button>
+          <button onClick={()=>navigate("/recharge")} className="rechargebtn">Recharge</button>
+          <button onClick={()=>navigate("/withdraw")}  className="withdrawbtn">Withdraw</button>
         </div>
       </div>
       <div className="centerpointsinfo">
@@ -25,7 +25,7 @@ const Points = () => {
           <img className="imgsizes" src={Task} alt="task" />{" "}
           <p className="textim">Task reward</p>
         </div>
-        <div className="checkcenter">
+        <div onClick={()=>navigate("/check")} className="checkcenter">
           <img className="imgsizes1" src={Check} alt="check" />{" "}
           <p className="textim1">Check in</p>
         </div>
