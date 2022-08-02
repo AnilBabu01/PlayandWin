@@ -11,6 +11,10 @@ import FastParityTap from "./components/games/fast/FastParityTap";
 import Invite from "./components/invite/Invite";
 import My from "./components/my/My";
 import Recharge from "./components/recharge/Recharge";
+import PaymentMethods from "./components/fiewin/withdraw/addPaymentmethod/PaymentMethods";
+import Newupi from "./components/fiewin/withdraw/addPaymentmethod/Newupi";
+import Mybank from "./components/fiewin/withdraw/addPaymentmethod/Mybank";
+import Paytm from "./components/fiewin/withdraw/addPaymentmethod/Paytm";
 const Main = () => {
   
   return (
@@ -29,6 +33,10 @@ const Main = () => {
           <Route path="/task" element={<Task/>} />
           <Route path="/check" element={<Checkin/>} />
           <Route path="/withdraw" element={<Withdraw/>} />
+          <Route path="/payment-method" element={<PaymentMethods/>} />
+          <Route path="/new-upi" element={<Newupi/>} />
+          <Route path="/mybank-upi" element={<Mybank/>} />
+          <Route path="/paytm" element={<Paytm/>} />
         </Routes>
         
       </BrowserRouter>

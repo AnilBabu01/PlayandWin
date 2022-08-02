@@ -9,7 +9,26 @@
 }
 
 .task-midle {
-    margin-left: 37%;
+    margin-left: 34%;
+}
+
+.task-midle3 {
+  margin-left: 35%;
+}
+
+.task-midle5 {
+  margin-left: 24%;
+}
+
+.task-midle4 {
+  margin-left: 29%;
+}
+.task-midle2 {
+  margin-left: 34%;
+}
+
+.task-midle1 {
+  margin-left: 31%;
 }
 .scroll {
   width: 500px;
@@ -114,7 +133,7 @@
 
 @media screen and (max-width: 780px) {
     .scroll {
-        width: 450px;
+      
         height:880px;
         overflow-y: scroll;
         scrollbar-color: rebeccapurple green;
