@@ -10,7 +10,7 @@ const Resetotp = ({ number, setsms, setshowalert }) => {
       }
     );
     if (response.data.status===true) {
-      setsms("OTP Send Successfully");
+      setsms(response.data.msg);
       setshowalert(true);
 
       setTimeout(() => {
@@ -18,7 +18,7 @@ const Resetotp = ({ number, setsms, setshowalert }) => {
       }, 2000);
     }
     if (response.data.status===false) {
-      setsms("OTP Not Send");
+      setsms(response.data.msg);
       setshowalert(true);
 
       setTimeout(() => {

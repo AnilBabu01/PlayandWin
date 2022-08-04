@@ -36,7 +36,7 @@ const Resetpassword = () => {
       }
     );
     if (response.data.status === true) {
-      setsms("Your Password Chnaged Successfully");
+      setsms(response.data.msg);
       setshowalert(true);
 
       setTimeout(() => {
@@ -44,7 +44,7 @@ const Resetpassword = () => {
       }, 2000);
     }
     if (response.data.status === false) {
-      setsms("Enter Valid OTP");
+      setsms(response.data.msg);
       setshowalert(true);
 
       setTimeout(() => {
