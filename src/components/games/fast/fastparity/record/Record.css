@@ -1,0 +1,37 @@
+.record-main-no{
+    text-align: "center";
+    
+    margin-top: "2px" ;
+}
+
+
+.red-no-div{
+    background: "red";
+    border-radius: "50%";
+    width: "2em";
+    height: "2em";
+    color: "white";
+
+    text-align: "center",
+}
+
+.green-no-div{
+    background: "green";
+    border-radius: "50%";
+    width: "2em";
+    height: "2em";
+    color: "white";
+
+    text-align: "center",
+}
+
+.blue-half-div{
+    background:
+    "linear-gradient(90deg, rgba(184,122,86,1) 0%, rgba(173,89,180,1) 0%, rgba(28,16,236,1) 0%, rgba(12,128,247,1) 50%, rgba(0,212,255,1) 50%)";
+    border-radius: "50%";
+    width: "2em";
+    height: "2em";
+    color: "white";
+
+    text-align: "center",
+}

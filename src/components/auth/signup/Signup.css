@@ -15,12 +15,12 @@
 }
 .otpbtn-div1{
   position: absolute;
-    bottom: 62px;
+    bottom: 75px;
     left: 218px;
 }
 .otpbtn-div2{
   position: absolute;
-  bottom: 185px;
+  bottom: 199px;
   left: 215px;
 }
 .winP {
@@ -67,12 +67,14 @@
 
 .otpbtn-div1{
   position: absolute;
-  bottom: 62px;
+  bottom: 75px;
   left: 195px;
 }
+
+
 .otpbtn-div2{
   position: absolute;
-  bottom: 185px;
+  bottom: 199px;
   left: 168px;
 }
 }

@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  border-bottom: 18px solid #ada3a3;
+ border-bottom: 18px solid #f4eeee;
 }
 
 .id-div p,
@@ -50,7 +50,7 @@ h2 {
   margin-left: 10px;
 }
 .order-main-div {
-  border-bottom: 18px solid #ada3a3;
+  border-bottom: 18px solid #f4eeee;
 }
 .option-man {
   display: flex;
@@ -84,24 +84,26 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ada3a3;
+  background-color: #f4eeee;
   height: 100px;
+  color: gray;
 }
 .logout-div p {
-  color: rgb(46, 39, 39);
+  color: gray;
+  margin-bottom: 55px;
+  margin-top: 0px;
 }
-
 @media screen and (max-width: 780px) {
   .my-div {
-    width: 300px;
+    width: 346px;
     padding: 5px;
-  }
+}
   .option-man {
-    width: 300px;
+    width: 346px;
     padding: 5px;
   }
   .option-man1 {
-    width: 300px;
+    width: 346px;
     padding: 5px;
   }
 }

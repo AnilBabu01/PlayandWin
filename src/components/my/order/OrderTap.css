@@ -8,13 +8,13 @@
   word-break: break-all;
 }
 
-.bloc-tabs {
+.bloc-tabs10 {
   display: flex;
 }
 .tabs {
   padding: 15px;
   text-align: center;
- 
+
   background-color: rgb(245, 245, 245);
   cursor: pointer;
   box-sizing: content-box;
@@ -32,18 +32,17 @@
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 5px;
-
 }
-.under-line{
-  width: 50%;
+.under-line10 {
+  width: 200px!important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.under-line-div{
-  background-color:blue ;
+.under-line-div {
+  background-color: blue;
   width: 40px;
   height: 5px;
   position: absolute;
@@ -51,8 +50,7 @@
   border-radius: 5px;
 }
 
-.under-line-div1{
-
+.under-line-div1 {
   display: none;
 }
 button {
@@ -81,20 +79,14 @@ button {
   display: block;
 }
 
-
-
-
 @media screen and (max-width: 780px) {
-  
   .container {
-   
-    margin-left: -15px!important;
+    margin-left: -15px !important;
   }
-  
+
   .tabs {
     padding: 1px;
     font-size: 16px;
     font-weight: 800;
   }
-  
 }

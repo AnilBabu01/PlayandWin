@@ -12,7 +12,7 @@ const Task = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="allcenter">
+      <div className="allcen">
         <div className="task-main">
           <div className="task-top">
             <ArrowBackIosIcon onClick={() => navigate("/fiewin")} style={{marginLeft: "15px"}} />

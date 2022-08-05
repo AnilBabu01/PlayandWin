@@ -89,7 +89,7 @@ const Passwordlogin = () => {
               value={password}
               onChange={onChange}
               type={showpropress ? "text" : "password"}
-              placeholder="Password (>/Charectors)"
+              placeholder="Password (>/Character)"
             />
             <li
               className="showpassworddsignup"
@@ -99,11 +99,16 @@ const Passwordlogin = () => {
             </li>
           </div>
 
+
           <div>
-            <button className="logbtn">Login</button>
+            <button 
+             disabled={number &&password ? false : true}
+             className={number &&password  ? "logbtn1" : "logbtn"}
+            
+           >Login</button>
           </div>
         </form>
-        <Link to="/reset-password">Reset Password</Link>
+        <Link className="res-link" to="/reset-password">Reset Password</Link>
       </div>
     </>
   );

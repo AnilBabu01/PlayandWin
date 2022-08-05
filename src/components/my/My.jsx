@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import BottomNavBar from "../boottomnavbar/BoottomNavbar";
 import Avatar from "@material-ui/core/Avatar";
 import order from "../../images/orderIcon.png";
@@ -13,22 +13,24 @@ const My = () => {
   const navigate = useNavigate();
   const [sms, setsms] = useState("");
   const [showalert, setshowalert] = useState(false);
-  const logout=()=>{
+  const logout = () => {
     localStorage.removeItem("tokenAuth");
-    setshowalert(true); 
+    setshowalert(true);
     setsms("you have login Successfully");
     setTimeout(() => {
-    setshowalert(false); 
-    navigate("/")
+      setshowalert(false);
+      navigate("/");
     }, 2000);
-  }
-return (
+  };
+  return (
     <>
-      <div className="maindivman">
       <div className="alert-div-my">
+        <div style={{width:"200px"}}>
+        <Alert sms={sms} showalert={showalert} />
+        </div>
       
       </div>
-     
+      <div className="maindivman">
         <div>
           <div className="my-div">
             <p>My</p>
@@ -55,9 +57,9 @@ return (
               />
             </div>
           </div>
-        
+
           <div className="order-main-div">
-            <div className="option-man">
+            <div onClick={()=>  navigate("/order")} className="option-man">
               <div className="option-icon-div">
                 <img src={order} alt="order" /> <p>Order Record</p>
               </div>
@@ -68,11 +70,12 @@ return (
                 />
               </div>
             </div>
+            
             <div className="option-man">
               <div className="option-icon-div">
                 <img src={details} alt="order" /> <p>Financial Details</p>
               </div>
-          
+
               <div className="arrowcenter-div">
                 <img
                   src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
@@ -81,6 +84,7 @@ return (
               </div>
             </div>
           </div>
+          
           <div className="order-main-di">
             <div className="option-man">
               <div className="option-icon-div">
@@ -116,9 +120,9 @@ return (
               </div>
             </div>
           </div>
+
           <div onClick={logout} className="logout-div">
-          <Alert sms={sms} showalert={showalert} />
-            <p>Logout</p>
+            <p>Sing out</p>
           </div>
           <BottomNavBar name="my" />
         </div>

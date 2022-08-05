@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import VerifyQuickOtp from "./VerifyQuickOtp";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -12,10 +12,16 @@ const Quicklogin = () => {
   });
   const [sms, setsms] = useState("");
   const [showalert, setshowalert] = useState(false);
+  const token = localStorage.getItem("tokenAuth");
   const { number, otpcode } = credentials;
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
+  useEffect(() => {
+    if (token) {
+      navigate("/fiewin");
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,25 +38,24 @@ const Quicklogin = () => {
         if (response.data.status === true) {
           setsms("you have login Successfully");
           setshowalert(true);
-          
+
           setTimeout(() => {
-            navigate("/fiewin")
+            navigate("/fiewin");
             setshowalert(false);
           }, 2000);
         }
         if (response.data.status === false) {
           setsms(response.data.msg);
           setshowalert(true);
-  
+
           setTimeout(() => {
             setshowalert(false);
           }, 2000);
         }
-        localStorage.setItem("tokenAuth",response.data.token);
+        localStorage.setItem("tokenAuth", response.data.token);
         console.log(number, response.data.token);
-       
       }
-     } catch (error) {
+    } catch (error) {
       setsms("Internal server error");
       setshowalert(true);
 
@@ -58,7 +63,6 @@ const Quicklogin = () => {
         setshowalert(false);
       }, 2000);
     }
-   
   };
   return (
     <>
@@ -88,7 +92,12 @@ const Quicklogin = () => {
             />
           </div>
           <div>
-            <button className="logbtn">Login</button>
+            <button
+              disabled={number && otpcode ? false : true}
+              className={number && otpcode ? "logbtn1" : "logbtn"}
+            >
+              Login
+            </button>
           </div>
         </form>
         <div className="otpbtn-div1">

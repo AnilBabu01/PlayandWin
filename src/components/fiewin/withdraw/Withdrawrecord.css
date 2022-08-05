@@ -1,0 +1,47 @@
+.main-with-record{
+    width: 410px;
+    height: 150px;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.time-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.acually{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gray-p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.black-p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.green-p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: green;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 780px) {
+    .main-with-record{
+        width: 305px;
+    }
+  }
+  
