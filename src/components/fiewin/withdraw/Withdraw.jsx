@@ -7,6 +7,7 @@ import Fade from "@material-ui/core/Fade";
 import close from "../../../images/cLoseBtn.png";
 import Withdrawalchekcin from "../../../images/withdrawalCheckin.png";
 import WithdrawalTask from "../../../images/withdrawalTask.png";
+import Withdrawrecord from "./Withdrawrecord";
 import AddIcon from "@material-ui/icons/Add";
 
 import "./Withdraw.css";
@@ -35,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "15px",
   },
 }));
-
 
 const Withdraw = () => {
   const classes = useStyles();
@@ -97,7 +97,8 @@ const Withdraw = () => {
           </Fade>
         </Modal>
       </div>
-      <div className="allcenter">
+
+      <div className="allcen">
         <div className="task-main">
           <div className="task-top">
             <ArrowBackIosIcon
@@ -149,23 +150,22 @@ const Withdraw = () => {
                 </div>
               </div>
               <div className="add-main1">
-                <div>
-                  <button
-                    disabled={amout ? false : true}
-                    className={amout ? "with-btn1" : "with-btn"}
-                  >
-                    Withdraw
-                  </button>
-                </div>
+                <button
+                  disabled={amout ? false : true}
+                  className={amout ? "with-btn1" : "with-btn"}
+                >
+                  Withdraw
+                </button>
               </div>
             </form>
             <div className="add-main">
               <div className="add-pay-method1">
                 <h2>Withdrawal Records</h2>
 
-                <div className="no-record">
-                  <h2>No records</h2>
-                </div>
+               <Withdrawrecord/>
+               <Withdrawrecord/>
+               <Withdrawrecord/>
+              
               </div>
             </div>
           </div>

@@ -36,7 +36,8 @@
   }
   .bloc-tabs2 {
       display: flex;
-     
+      justify-content: center;
+      align-items:center ;
       background: white;
       width: 460px;
   }
@@ -59,7 +60,26 @@
       border-top-right-radius: 10px;
       border-top: 1px solid gray;
   }
-  
+  .tabs5 {
+    height: 48px;
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
   .tabs3 {
     height: 48px;
     text-align: center;
@@ -115,9 +135,7 @@
     margin-left: -2px;
   }
 
-  .mobilewidth{
-    width: 350px!important;
-  }
+  
 
   .bloc-tabs2 {
    

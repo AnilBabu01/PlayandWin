@@ -4,7 +4,7 @@
 .task-top {
   display: flex;
   height: 45px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #efe3e3;
   align-items: center;
 }
 
@@ -130,10 +130,14 @@
     color: gray;
 }
 
+.allcen {
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (max-width: 780px) {
     .scroll {
-      
+         width: 100%;
         height:880px;
         overflow-y: scroll;
         scrollbar-color: rebeccapurple green;
@@ -142,5 +146,5 @@
       .mobile-main-task{
         margin-left: 13px;
       }
-        
-      }
+    
+   }

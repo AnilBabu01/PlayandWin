@@ -11,26 +11,14 @@ const RecordTap = () => {
     <>
       <div className="container1">
         <div className="bloc-tabs2">
-          <button
-            disabled='true'
-            className={toggleState === 1 ? "tabs3 " : "tabs4"}
-            onClick={() => toggleTab(1)}
-          >
-            Continuous
-          </button>
+        
           <button
             className={toggleState === 2 ? "tabs3 " : "tabs4"}
             onClick={() => toggleTab(2)}
           >
             Record
           </button>
-          <button
-           disabled='true'
-            className={toggleState === 3 ? "tabs3 " : "tabs4"}
-            onClick={() => toggleTab(3)}
-          >
-            Probability
-          </button>
+        
         </div>
 
         <div className="content-tabs">

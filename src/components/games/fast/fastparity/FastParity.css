@@ -96,7 +96,7 @@
 .Cout {
   color: #979797;
   font-size: 18px;
-
+  margin-left: 30px;
   padding-left: 35px;
   width: auto !important;
   height: auto !important;
@@ -121,15 +121,17 @@
 
 .join {
   display: flex;
-  align-items: center;
-  background-color: rgb(0, 194, 130);
-  padding: 15px;
-  border-radius: 5px;
-  color: white;
-  justify-content: center;
-  font-weight: 500;
-  margin: 2px;
-  height: 50px;
+    align-items: center;
+    background-color: rgb(0, 194, 130);
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    font-weight: 500;
+    margin: 2px;
+    height: 50px;
+    flex-direction: column;
+    width: 110px;
 }
 
 .voilet {
@@ -142,6 +144,8 @@
   justify-content: center;
   font-weight: 500;
   height: 40px;
+  flex-direction: column;
+  width: 110px;
 }
 
 .red {
@@ -155,6 +159,8 @@
   align-items: center;
   margin: 2px;
   height: 40px;
+  flex-direction: column;
+  width: 110px;
 }
 
 .blow {
@@ -205,7 +211,7 @@
   .join {
    
     padding: 4px;
- 
+   width: 105.5px;
     margin: 2px;
     height: 42px;
   }
@@ -213,14 +219,14 @@
   .voilet {
    
     padding: 5px;
-    
+    width: 105.5px;
    
     font-weight: 500;
     height: 40px;
   }
   
   .red {
-   
+    width: 105.5px;
     padding: 8px;
     
     margin: 2px;

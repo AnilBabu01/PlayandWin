@@ -1,0 +1,36 @@
+.ordermain-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ordermain-div-content {
+  width: 450px;
+}
+
+.title-div {
+  width: 55%;
+}
+.title-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 600;
+   
+}
+.title-div-arrow {
+  width: 45%;
+}
+
+
+
+.main-scroller-div{
+  width: 467px;
+  height: 110px;
+  overflow-x: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+  border-top: 15px solid #f4eeee;
+}

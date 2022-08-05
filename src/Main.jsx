@@ -15,6 +15,7 @@ import PaymentMethods from "./components/fiewin/withdraw/addPaymentmethod/Paymen
 import Newupi from "./components/fiewin/withdraw/addPaymentmethod/Newupi";
 import Mybank from "./components/fiewin/withdraw/addPaymentmethod/Mybank";
 import Paytm from "./components/fiewin/withdraw/addPaymentmethod/Paytm";
+import Order from "./components/my/order/Order";
 const Main = () => {
   
   return (
@@ -37,6 +38,7 @@ const Main = () => {
           <Route path="/new-upi" element={<Newupi/>} />
           <Route path="/mybank-upi" element={<Mybank/>} />
           <Route path="/paytm" element={<Paytm/>} />
+          <Route path="/order" element={<Order/>} />
         </Routes>
         
       </BrowserRouter>

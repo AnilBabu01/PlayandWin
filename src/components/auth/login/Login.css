@@ -37,7 +37,10 @@
     justify-content: center;
     margin-top: -30px;
 }
-
+.res-link{
+    text-decoration: none;
+    color: rgb(0, 147, 255);
+}
  
 @media screen and (max-width: 780px) {
    

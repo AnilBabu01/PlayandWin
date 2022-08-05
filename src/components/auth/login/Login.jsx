@@ -23,13 +23,13 @@ const Login = () => {
               <p>
                 Don't have a account?{" "}
                 <span>
-                  <Link to="/signup">Register</Link>
+                  <Link className="res-link" to="/signup">Register</Link>
                 </span>{" "}
               </p>
             </div>
           </div>
           <div className="facebook">
-            <p>feedback</p>
+            <p>Feedback</p>
           </div>
         </div>
       </div>

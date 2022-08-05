@@ -135,7 +135,11 @@ const Resetpassword = () => {
               </div>
 
               <div>
-                <button className="logbtn">Reset</button>
+                <button
+                   disabled={number && otpcode&&password&&confirmpassword ? false : true}
+                   className={number && otpcode&&password&&confirmpassword? "logbtn1" : "logbtn"}
+                
+                >Reset</button>
               </div>
             </form>
             <div className="otpbtn-div2">
@@ -151,7 +155,7 @@ const Resetpassword = () => {
               <p>
                 Registered account?
                 <span>
-                  <Link to="/">Login</Link>
+                  <Link style={{marginLeft:'10px'}} className="res-link" to="/">Login</Link>
                 </span>{" "}
               </p>
             </div>

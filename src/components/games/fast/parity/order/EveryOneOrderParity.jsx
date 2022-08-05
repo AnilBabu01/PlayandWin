@@ -1,24 +1,20 @@
 import React from 'react'
+import Rowrecord from '../../fastparity/order/Rowrecord'
 import './EveryOneOrder.css'
 const EveryOneOrder = () => {
   return (
     <>
-      <table>
-        <tr>
-          <th>Period</th>
-          <th>User</th>
-          <th>Select</th>
-
-          <th>Point</th>
-        
+      <table className="table-everyone-order">
+        <tr className="table-everyone-order-heading">
+          <td>Period</td>
+          <td>User</td>
+          <td>Select</td>
+          <td>Point</td>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        
-        </tr>
+         <Rowrecord/>
+         <Rowrecord/>
+         <Rowrecord/>
+         <Rowrecord/>
       </table>
     
     </>
