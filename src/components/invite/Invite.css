@@ -19,7 +19,7 @@
 
 .imgdiv {
   padding: 20px;
-  background-image: url(https://res.cloudinary.com/fiewin1/image/upload/images/proxyBg.png);
+  background-image: url('../../images//proxyBg.png');
   height: 260px;
   background-size: contain;
   width: 470px;
