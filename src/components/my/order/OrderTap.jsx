@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import CrashOrder from "./crashorder/CrashOrder";
+import FastfarityOrder from "./fastparityorder/FastfarityOrder";
+import HiloOrder from "./hiloorder/HiloOrder";
+import MineOrder from "./minesweeperorder/MineOrder";
 import "./OrderTap.css";
 const OrderTap = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -8,62 +12,65 @@ const OrderTap = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="container10">
         <div className="main-scroller-div">
             
           <div className="bloc-tabs10">
             <div className="under-line10">
               <button
-                className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+                className={toggleState === 1 ? "tabs10 active-tabs" : "tabs10"}
                 onClick={() => toggleTab(1)}
               >
-                Quick Login
+                fast-parity
               </button>
               <div
                 className={
-                  toggleState === 1 ? "under-line-div" : "under-line-div1"
+                  toggleState === 1 ? "under-line-div10" : "under-line-div11"
                 }
               ></div>
             </div>
 
             <div className="under-line10">
               <button
-                className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-                onClick={() => toggleTab(1)}
+                className={toggleState === 2 ? "tabs10 active-tabs" : "tabs10"}
+                onClick={() => toggleTab(2)}
               >
-                Quick Login
+                MineSweeper
               </button>
               <div
                 className={
-                  toggleState === 1 ? "under-line-div" : "under-line-div1"
+                  toggleState === 2 ? "under-line-div10" : "under-line-div11"
                 }
               ></div>
+             
             </div>
             <div className="under-line10">
               <button
-                className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-                onClick={() => toggleTab(1)}
+                className={toggleState === 3? "tabs10 active-tabs" : "tabs10"}
+                onClick={() => toggleTab(3)}
               >
-                Quick Login
+                Crash
               </button>
               <div
                 className={
-                  toggleState === 1 ? "under-line-div" : "under-line-div1"
+                  toggleState === 3 ? "under-line-div10" : "under-line-div11"
                 }
               ></div>
+             
             </div>
             <div className="under-line10">
               <button
-                className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-                onClick={() => toggleTab(1)}
+                className={toggleState === 4 ? "tabs10 active-tabs" : "tabs10"}
+                onClick={() => toggleTab(4)}
               >
-                Quick Login
+                Hilo
               </button>
               <div
                 className={
-                  toggleState === 1 ? "under-line-div" : "under-line-div1"
+                  toggleState === 4 ? "under-line-div10" : "under-line-div11"
                 }
               ></div>
+             
             </div>
 
 
@@ -77,7 +84,7 @@ const OrderTap = () => {
               toggleState === 1 ? "content  active-content" : "content"
             }
           >
-            shxjashcjscz
+             <FastfarityOrder/>
           </div>
 
           <div
@@ -85,7 +92,21 @@ const OrderTap = () => {
               toggleState === 2 ? "content  active-content" : "content"
             }
           >
-            xgzhcghzxcz
+            <MineOrder/>
+          </div>
+          <div
+            className={
+              toggleState === 3 ? "content  active-content" : "content"
+            }
+          >
+            <CrashOrder/>
+          </div>
+          <div
+            className={
+              toggleState === 4 ? "content  active-content" : "content"
+            }
+          >
+          <HiloOrder/>
           </div>
         </div>
       </div>

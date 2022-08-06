@@ -40,8 +40,8 @@ h2 {
   margin-left: 0px;
   margin-top: 10px;
   margin-bottom: 5px;
-  font-size: 22px;
-  color: #666060;
+  font-size: 17px;
+ 
 }
 .add-pay-method1 input {
   width: 390px;
@@ -50,6 +50,7 @@ h2 {
   padding: 20px;
   font-size: 16px;
 }
+
 .add-pay-method1 input:focus {
   outline: none;
 }

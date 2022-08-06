@@ -12,12 +12,13 @@
   width: 55%;
 }
 .title-main-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    font-size: 22px;
-    font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: -25px;
    
 }
 .title-div-arrow {
@@ -25,12 +26,12 @@
 }
 
 
-
+/* 
 .main-scroller-div{
-  width: 467px;
-  height: 110px;
+  width: 450px;
+  height: 90px;
   overflow-x: scroll;
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
   border-top: 15px solid #f4eeee;
-}
+} */

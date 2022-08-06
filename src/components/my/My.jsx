@@ -6,6 +6,7 @@ import intro from "../../images/introductionIcon.png";
 import mail from "../../images/mailIcon.png";
 import share from "../../images/shareIcon.png";
 import details from "../../images/detailIcon.png";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Alert from "../Alert/Alert";
 import { useNavigate } from "react-router-dom";
 import "./My.css";
@@ -51,12 +52,10 @@ const My = () => {
             </div>
             <div className="modify-divv">
               <p>Modify</p>
-              <img
-                src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
-                alt="arroww"
-              />
+              <ArrowForwardIosIcon/>
             </div>
           </div>
+
 
           <div className="order-main-div">
             <div onClick={()=>  navigate("/order")} className="option-man">
@@ -64,10 +63,8 @@ const My = () => {
                 <img src={order} alt="order" /> <p>Order Record</p>
               </div>
               <div className="arrowcenter-div">
-                <img
-                  src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
-                  alt="arroww"
-                />
+                <ArrowForwardIosIcon/>
+               
               </div>
             </div>
             
@@ -77,10 +74,7 @@ const My = () => {
               </div>
 
               <div className="arrowcenter-div">
-                <img
-                  src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
-                  alt="arroww"
-                />
+              <ArrowForwardIosIcon/>
               </div>
             </div>
           </div>
@@ -91,10 +85,7 @@ const My = () => {
                 <img src={intro} alt="order" /> <p>About Us</p>
               </div>
               <div className="arrowcenter-div">
-                <img
-                  src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
-                  alt="arroww"
-                />
+              <ArrowForwardIosIcon/>
               </div>
             </div>
             <div className="option-man">
@@ -102,10 +93,7 @@ const My = () => {
                 <img src={mail} alt="order" /> <p>Support</p>
               </div>
               <div className="arrowcenter-div">
-                <img
-                  src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
-                  alt="arroww"
-                />
+              <ArrowForwardIosIcon/>
               </div>
             </div>
             <div className="option-man">
@@ -113,10 +101,7 @@ const My = () => {
                 <img src={share} alt="order" /> <p>Follows</p>
               </div>
               <div className="arrowcenter-div">
-                <img
-                  src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png"
-                  alt="arroww"
-                />
+              <ArrowForwardIosIcon/>
               </div>
             </div>
           </div>

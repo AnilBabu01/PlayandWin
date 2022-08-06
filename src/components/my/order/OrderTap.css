@@ -1,4 +1,4 @@
-.container {
+.container10 {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -10,18 +10,27 @@
 
 .bloc-tabs10 {
   display: flex;
+    width: 450px;
+    height: px;
+    overflow-x: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    border-top: 15px solid #f4eeee;
 }
-.tabs {
+.tabs10 {
   padding: 15px;
   text-align: center;
-
-  background-color: rgb(245, 245, 245);
+  width: 150px;
+  height: 42px;
+  background-color: white;
   cursor: pointer;
+  border-top-right-radius: 15px;
   box-sizing: content-box;
   position: relative;
   outline: none;
   font-size: 18px;
   font-weight: 500;
+  box-shadow: rgb(0 0 0 / 10%) 1px 0px 5px;
 }
 
 .active-tabs::after {
@@ -33,24 +42,25 @@
   width: calc(100% + 2px);
   height: 5px;
 }
+
 .under-line10 {
-  width: 200px!important;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.under-line-div {
+.under-line-div10 {
   background-color: blue;
-  width: 40px;
-  height: 5px;
+  width: 172px;
+  height: 2px;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 69px;
   border-radius: 5px;
 }
 
-.under-line-div1 {
+.under-line-div11 {
   display: none;
 }
 button {
@@ -58,6 +68,7 @@ button {
 }
 .content-tabs {
   flex-grow: 1;
+ 
 }
 .content {
   display: none;
@@ -89,4 +100,24 @@ button {
     font-size: 16px;
     font-weight: 800;
   }
+
+  .container10 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%; 
+    height: 300px;
+    margin: 30px auto 0;
+    word-break: break-all;
+}
+
+.bloc-tabs10 {
+  display: flex;
+  width: 100%;
+  height: px;
+  overflow-x: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+  border-top: 15px solid #f4eeee;
+}
 }

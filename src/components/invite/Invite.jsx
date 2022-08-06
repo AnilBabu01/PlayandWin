@@ -2,6 +2,7 @@ import React from "react";
 import BottomNavBar from "../boottomnavbar/BoottomNavbar";
 import agent from "../../images/agentPlanEnter.png";
 import link from "../../images/linkNew1.png";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import privilege from "../../images/Privilege.png";
 import ranking from "../../images/rankingIcon.png";
 import goright from "../../images/goRight.png";
@@ -65,7 +66,7 @@ const Invite = () => {
               </div>
               <div className="more-div">
                 <p style={{ color: "gray" }}>More</p>{" "}
-                <img  src="https://res.cloudinary.com/fiewin/image/upload/images/arrowRight.png" alt="arroww" />
+              <ArrowForwardIosIcon />
               </div>
             </div>
 
