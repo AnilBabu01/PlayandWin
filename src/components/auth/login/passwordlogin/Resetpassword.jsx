@@ -91,6 +91,7 @@ const Resetpassword = () => {
                   placeholder="Input verification Code"
                 />
               </div>
+              
               <div className="numberdiv">
                 <span className="num1">
                   <LockIcon />

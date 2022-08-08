@@ -143,7 +143,7 @@ const Signup = () => {
               <p>
                 Registered account?
                 <span>
-                  <Link to="/">Login</Link>
+                  <Link className="res-link" style={{marginLeft:"5px"}} to="/">Login</Link>
                 </span>{" "}
               </p>
             </div>

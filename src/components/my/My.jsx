@@ -50,7 +50,7 @@ const My = () => {
                 <p>NickName: </p>
               </div>
             </div>
-            <div className="modify-divv">
+            <div  onClick={()=>navigate("/modify")} className="modify-divv">
               <p>Modify</p>
               <ArrowForwardIosIcon/>
             </div>

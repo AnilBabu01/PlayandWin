@@ -1,0 +1,132 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 460px;
+  height: 300px;
+  margin: 30px auto 0;
+  word-break: break-all;
+  margin-top: 0px;
+}
+
+.fasti {
+  height: 30px;
+}
+.center-arrow20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 30px;
+  padding-left: 5px;
+}
+
+.rule-left20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.ruleleft {
+  margin-left: 5px;
+}
+.bloc-tabs20 {
+  display: flex;
+  position: fixed;
+  background: white;
+  width: 460px;
+  border-bottom: 1px solid rgb(204, 192, 192);
+}
+.tabs20 {
+  height: 38px;
+  text-align: center;
+  width: 20%;
+  background-color: white;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2d7d7;
+  border-radius: 18px;
+  margin-right: 10px;
+}
+
+.tabs21 {
+  height: 38px;
+  text-align: center;
+  width: 20%;
+  background-color: rgb(0, 147, 255);
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 19px;
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+}
+.content {
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+  .bloc-tabs20 {
+    display: flex;
+    position: fixed;
+   
+    width: 372px;
+  }
+  .tabs20 {
+    height: 32px;
+
+    width: 15%;
+  }
+
+  .tabs21 {
+    height: 32px;
+
+    width: 15%;
+  }
+
+  .container1 {
+    width: 360px !important;
+    height: 300px;
+    margin: 0px auto 0;
+    word-break: break-all;
+    margin-top: 0px;
+  }
+}

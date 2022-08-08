@@ -8,6 +8,7 @@ const PaymentMethods = () => {
       {" "}
       <div className="allcenter">
         <div className="task-main">
+          
           <div className="task-top">
             <ArrowBackIosIcon
               onClick={() => navigate("/withdraw")}

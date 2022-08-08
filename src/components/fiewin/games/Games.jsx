@@ -12,7 +12,7 @@ const Games = () => {
       <div className="gamecen">
         <div className="gamediv">
           <img  onClick={()=>navigate('/games/fast-parity')} className="gameimg" src={fastParityEnter} alt="fast" />
-          <img className="gameimg" src={mineSweeperEnterV2} alt="fast" />
+          <img onClick={()=>navigate('/games/Sweeper')} className="gameimg" src={mineSweeperEnterV2} alt="fast" />
           <img className="gameimg" src={holindexEnter} alt="fast" />
           <img className="gameimg" src={crashEnter} alt="fast" />
         </div>
