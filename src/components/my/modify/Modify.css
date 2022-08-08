@@ -1,0 +1,236 @@
+.pay-div1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #efe3e3;
+  color: gray;
+  padding: 10px;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.pay-div1 input {
+  border: none;
+  width: 300px;
+
+  font-size: 16px;
+}
+.pay-div1 input:focus {
+  outline: none;
+}
+
+.pay-div1 p {
+  text-align: center;
+}
+
+.arrow-div-my {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avater-style {
+  background-color: #bdbdbd !important;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.modify-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 18px solid #f4eeee;
+}
+
+.modify-top10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 44px;
+}
+.midify-arrow {
+  position: absolute;
+  left: 2px;
+  bottom: 8px;
+}
+.bottom-div-modify {
+  background: #f4eeee;
+  width: 100%;
+  height: 65%;
+}
+.avatar-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  height: 600px;
+
+  background-color: #efeaea;
+}
+
+.avatar-img-div {
+  position: relative;
+}
+
+.img-avatar-size {
+  width: 130px;
+  border-radius: 80px;
+}
+
+.input-overlay {
+  position: absolute;
+  bottom: -3px;
+}
+.input-overlay input {
+  height: 150px;
+  width: 150px;
+}
+
+.file-input {
+  opacity: 0;
+}
+.upi-div11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 280px;
+}
+
+.upi-div11 button {
+  background-color: rgb(0, 147, 255);
+  margin-bottom: 20px;
+  height: 45px;
+  width: 450px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.upi-div10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upi-div10 button {
+  background-color: rgb(0, 147, 255);
+  margin-bottom: 20px;
+  height: 45px;
+  width: 450px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.mickname-main {
+  width: 480px;
+}
+.changenikname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #efeaea;
+  padding-bottom: 385px;
+}
+
+.nink-main-content {
+  width: 100%;
+}
+.nink-main-content p {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+  color: gray;
+}
+.nink-main-content input {
+  width: 100%;
+  border: none;
+  height: 45px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.nink-main-content input:focus {
+  outline: none;
+}
+
+.orange-p {
+  color: rgb(255, 153, 51) !important;
+}
+
+.numberdiv10 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numberdiv10 input {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding-left: 60px;
+}
+
+.num10 {
+  position: absolute;
+  margin-right: 80%;
+
+  margin-bottom: -18px;
+}
+.showpassworddsignup10 {
+  position: absolute;
+  left: 410px;
+  bottom: 8px;
+  list-style: none;
+}
+
+.number-div-update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.number-div-update h2 {
+}
+
+.showpass-icon {
+  width: 25px;
+}
+.gray-number {
+  color: gray;
+}
+@media screen and (max-width: 780px) {
+  .pay-div1 input {
+    border: none;
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .bottom-div-modify {
+    background: #f4eeee;
+
+    height: 65%;
+  }
+
+  .upi-div10 button {
+    width: 350px;
+  }
+  .mickname-main {
+    width: 360px;
+  }
+  .nink-main-content input {
+    width: 94.1%;
+  }
+  .showpassworddsignup10 {
+    position: absolute;
+    left: 310px;
+    bottom: 12px;
+    list-style: none;
+  }
+
+}

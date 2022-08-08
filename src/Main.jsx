@@ -16,6 +16,12 @@ import Newupi from "./components/fiewin/withdraw/addPaymentmethod/Newupi";
 import Mybank from "./components/fiewin/withdraw/addPaymentmethod/Mybank";
 import Paytm from "./components/fiewin/withdraw/addPaymentmethod/Paytm";
 import Order from "./components/my/order/Order";
+import Modify from "./components/my/modify/Modify";
+import Avataruser from "./components/my/modify/Avataruser";
+import Nickname from "./components/my/modify/Nickname";
+import Changepassword from "./components/my/modify/Changepassword";
+import AddID from "./components/my/modify/AddID";
+import MineSweeper from "./components/games/mine/MineSweeper";
 const Main = () => {
   
   return (
@@ -39,6 +45,12 @@ const Main = () => {
           <Route path="/mybank-upi" element={<Mybank/>} />
           <Route path="/paytm" element={<Paytm/>} />
           <Route path="/order" element={<Order/>} />
+          <Route path="/modify" element={<Modify/>} />
+          <Route path="/avataruser" element={<Avataruser/>} />
+          <Route path="/update-nickname" element={<Nickname/>} />
+          <Route path="/update-password" element={<Changepassword/>} />
+          <Route path="/add-id" element={<AddID/>} />
+          <Route path="/games/Sweeper" element={<MineSweeper/>} />
         </Routes>
         
       </BrowserRouter>

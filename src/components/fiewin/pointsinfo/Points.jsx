@@ -37,11 +37,11 @@ const Points = () => {
           </div>
           <div className="centerpointsinfo">
             <div onClick={() => navigate("/task")} className="checkcenter">
-              <img className="imgsizes" src={Task} alt="task" />{" "}
+              <img className="imgsizes" src={Check} alt="task" />{" "}
               <p className="textim">Task reward</p>
             </div>
             <div onClick={() => navigate("/check")} className="checkcenter">
-              <img className="imgsizes1" src={Check} alt="check" />{" "}
+              <img className="imgsizes1" src={Task} alt="check" />{" "}
               <p className="textim1">Check in</p>
             </div>
           </div>

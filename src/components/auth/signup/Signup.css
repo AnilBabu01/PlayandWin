@@ -10,7 +10,7 @@
 }
 .otpbtn-div{
   position: absolute;
-    bottom: 122px;
+  bottom: 138px;
     left: 218px;
 }
 .otpbtn-div1{
@@ -58,10 +58,9 @@
 .winP {
   margin: -5px;
 }
-
-.otpbtn-div{
+.otpbtn-div {
   position: absolute;
-  bottom: 124px;
+  bottom: 137px;
   left: 168px;
 }
 
