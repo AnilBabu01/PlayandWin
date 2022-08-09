@@ -1,0 +1,41 @@
+
+.game-screen-div3 {
+    background-color: rgb(240, 240, 240);
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+  }
+  .img-click-start3{
+    position: absolute;
+    width: 100px;
+    height: 100;
+    margin-left: 37%;
+    margin-top: 32%;
+  }
+  .game-div-click3 {
+    background-color: rgb(212 195 195);
+    width: 11%;
+    margin: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 780px) {
+    .game-screen-div3 {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .game-div-click3 {
+        background-color: rgb(212 195 195);
+        width: 10.7%;
+        height: 10%;
+        margin: px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+  }
+  

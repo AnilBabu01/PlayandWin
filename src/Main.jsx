@@ -22,6 +22,7 @@ import Nickname from "./components/my/modify/Nickname";
 import Changepassword from "./components/my/modify/Changepassword";
 import AddID from "./components/my/modify/AddID";
 import MineSweeper from "./components/games/mine/MineSweeper";
+import LearnRecharge from "./components/fiewin/taskreward/learnrecharge/LearnRecharge";
 const Main = () => {
   
   return (
@@ -51,6 +52,7 @@ const Main = () => {
           <Route path="/update-password" element={<Changepassword/>} />
           <Route path="/add-id" element={<AddID/>} />
           <Route path="/games/Sweeper" element={<MineSweeper/>} />
+          <Route path="/learnrecharge" element={<LearnRecharge/>} />
         </Routes>
         
       </BrowserRouter>

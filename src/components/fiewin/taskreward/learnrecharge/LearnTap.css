@@ -1,8 +1,10 @@
-.container20 {
+.container1 {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 460px;
   height: 300px;
+  margin: 30px auto 0;
   word-break: break-all;
   margin-top: 0px;
 }
@@ -10,38 +12,35 @@
 .fasti {
   height: 30px;
 }
-.center-arrow2 {
+.center-arrow20 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid gray;
-  border-right: 1px solid blue;
+
   padding-right: 30px;
   padding-left: 5px;
 }
 
-.rule-left1 {
+.rule-left20 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid gray;
-  border-left: 1px solid blue;
   padding-left: 5px;
 }
 
 .ruleleft {
   margin-left: 5px;
 }
-.bloc-tabs24 {
+.bloc-tabs202 {
   display: flex;
+
   background: white;
-  width: 400px;
-  margin-top: 20px;
+  width: 460px;
 }
-.tabs22 {
-  height: 48px;
+.tabs24 {
+  height: 38px;
   text-align: center;
-  width: 48%;
+  width: 50%;
   background-color: white;
   cursor: pointer;
   box-sizing: content-box;
@@ -53,32 +52,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top: 1px solid gray;
+ 
+  border: 1px solid rgb(0, 147, 255);
 }
 
-.tabs23 {
-  height: 48px;
+.tabs25 {
+  height: 38px;
   text-align: center;
-  width: 48%;
+  width: 50%;
+  background-color: rgb(0, 147, 255);
   cursor: pointer;
   box-sizing: content-box;
   position: relative;
   outline: none;
   font-size: 15px;
   font-weight: 600;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top: 1px solid gray;
-  border-left: 1px solid gray;
-  border-bottom: 2px solid blue;
-  border-right: 1px solid gray;
-  background: white;
+  border: 1px solid rgb(0, 147, 255);
 }
 
 button {
@@ -108,20 +101,29 @@ button {
 }
 
 @media screen and (max-width: 780px) {
-  .container20 {
-    width: 200px;
-    margin-left: -2px;
+  .bloc-tabs202 {
+    display: flex;
+    position: fixed;
+
+    width: 372px;
+  }
+  .tabs24 {
+    height: 32px;
+
+    width: 50%;
   }
 
-  .tabs {
-    padding: 15px;
-    font-size: 16px;
-    font-weight: 800;
+  .tabs25 {
+    height: 32px;
+
+    width: 50%;
   }
-  .bloc-tabs24 {
-    display: flex;
-    background: white;
-    width: 330px;
-    margin-top: 20px;
+
+  .container1 {
+    width: 360px !important;
+    height: 300px;
+    margin: 0px auto 0;
+    word-break: break-all;
+    margin-top: 0px;
   }
 }
