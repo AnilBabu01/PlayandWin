@@ -6,7 +6,7 @@ import share1 from "../../images/share1.png";
 import share from "../../images/share.png";
 import mine1 from "../../images/mine1.png";
 import mine from "../../images/mine.png";
-import rechar from "../../images/recharge.png";
+import rechar from "../../images/Recharge.png";
 import rechar1 from "../../images/recharge1.png";
 import "./BoottomNavbar.css";
 const BottomNavBar = (props) => {

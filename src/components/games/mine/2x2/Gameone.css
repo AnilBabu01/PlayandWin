@@ -2,19 +2,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
+ 
+}
+.game-scrollbar{
   overflow-y: scroll;
   margin-top: 40px;
-  width: 300%;
+  width: 460px;
+  height: 700px;
 }
-
 .main-game-mine-content {
   margin-top: 30px;
 }
 
 .game-screen-div {
-  background-color: gray;
+  background-color: rgb(240, 240, 240);
   width: 400px;
-  height: 300px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  
+}
+.img-click-start{
+  position: absolute;
+  width: 100px;
+  height: 100;
+  margin-left: 37%;
+  margin-top: 32%;
+}
+.game-div-click{
+  background-color: rgb(212 195 195);
+  width: 44.5%;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .banner-div {
@@ -49,5 +70,12 @@
 
   .banner-div {
     width: 100%;
+  }
+  .game-div-click{
+    background-color: rgb(212 195 195);
+    width:43%;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
   }
 }

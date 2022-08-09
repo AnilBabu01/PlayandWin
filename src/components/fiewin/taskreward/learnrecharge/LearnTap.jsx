@@ -1,8 +1,8 @@
-import React,{useState} from 'react'
-import EveryoneorderOne from './EveryoneorderOne';
-import MyorderOne from '../myorder/MyorderOne';
-import './Tapone.css';
-const Tapone = () => {
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import './LearnTap.css'
+const LearnTap = () => {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -11,23 +11,25 @@ const Tapone = () => {
   return (
     <>
     
-      
-    <div className="container20">
-        <div className="bloc-tabs24">
+    <div  className="mobilewidth" >
+        <div className="container1">
+        <div className="bloc-tabs202">
+          
           <button
-           
-            className={toggleState === 1 ? "tabs23 " : "tabs22"}
+            className={toggleState === 1 ? "tabs25 " : "tabs24"}
             onClick={() => toggleTab(1)}
           >
-             EveryoOne's Orders     
+           
+            UPI PAY
           </button>
           <button
-            className={toggleState === 2 ? "tabs23 " : "tabs22"}
+            className={toggleState === 2 ? "tabs25 " : "tabs24"}
             onClick={() => toggleTab(2)}
           >
-            My Orders
+            QR code
           </button>
-         
+        
+          
         </div>
 
         <div className="content-tabs">
@@ -36,7 +38,7 @@ const Tapone = () => {
               toggleState === 1 ? "content  active-content" : "content"
             }
           >
-            <EveryoneorderOne/>
+          dfdfd
           </div>
 
           <div
@@ -44,15 +46,16 @@ const Tapone = () => {
               toggleState === 2 ? "content  active-content" : "content"
             }
           >
-            <MyorderOne/>
+         cxcvx
           </div>
         
         </div>
       </div>
+        </div>
     
     
     </>
   )
 }
 
-export default Tapone
+export default LearnTap

@@ -43,20 +43,7 @@
   justify-content: center;
   align-items: center;
 }
-.task-start-btn button {
-  background-color: rgb(189, 227, 255);
-  border-color: rgb(220, 240, 255);
-  border-width: 10px;
-  margin-top: 16px;
-  transition-duration: 0s;
-  color: rgb(17, 130, 212);
-  width: 95%;
-  border: 10px solid rgb(220, 240, 255);
-  border-radius: 20px;
-  padding: 3px;
-  font-size: 16px;
-  font-weight: 600;
-}
+
 
 .bottom-div {
   border-bottom: 1px solid gray;
@@ -66,20 +53,26 @@
 }
 .img-div-task {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
 
 .img-div-task img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 5px;
 }
 .recharge-div-task {
   display: flex;
+  width: 420px;
+ 
 }
-
+.red-rask-div-h{
+  display: flex;
+    justify-content: center;
+    width: 120px;
+}
 .recharge-div-task1 p {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -135,6 +128,37 @@
   justify-content: center;
 }
 
+.change-btn-style{
+  background: white;
+    border: 2px solid rgb(254, 155, 31);
+    color: rgb(254, 155, 31);
+    height: 40px;
+   
+  
+    margin-top: 16px;
+    transition-duration: 0s;
+  
+    width: 95%;
+  
+    border-radius: 20px;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.unchange-btn-stylev{
+  background-color: rgb(189, 227, 255);
+  border-color: rgb(220, 240, 255);
+  border-width: 10px;
+  margin-top: 16px;
+  transition-duration: 0s;
+  color: rgb(17, 130, 212);
+  width: 95%;
+  border: 10px solid rgb(220, 240, 255);
+  border-radius: 20px;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 600;
+}
 @media screen and (max-width: 780px) {
     .scroll {
          width: 100%;
@@ -150,5 +174,8 @@
       .task-main {
         width: 100%;
     }
+    .red-rask-div-h {
     
+      font-size: 12px;
+  }
    }
