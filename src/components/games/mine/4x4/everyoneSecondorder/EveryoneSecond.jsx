@@ -1,10 +1,18 @@
 import React from 'react'
-import Rowrecord from '../../../fast/fastparity/order/Rowrecord'
+import EveryOne from '../../2x2/everyoneorder/EveryOne'
 
 const EveryoneSecond = () => {
   return (
     <>
-   
+   <table className='table-one-game'>
+        <tr className='table-hd'>
+          <td>Period</td>
+          <td>User</td>
+          <td>Select</td>
+          <td>Point</td>
+        </tr>
+        <EveryOne/>
+      </table>
     </>
   )
 }

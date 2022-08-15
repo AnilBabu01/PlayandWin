@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
-.game-scrollbar{
+
+.game-scrollbar {
   overflow-y: scroll;
   margin-top: 40px;
   width: 460px;
@@ -21,23 +21,40 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  
 }
-.img-click-start{
+.img-click-start {
   position: absolute;
   width: 100px;
   height: 100;
   margin-left: 37%;
   margin-top: 32%;
 }
-.game-div-click{
+
+.img-click-start-hide{
+  display: none;
+}
+.game-div-click {
   background-color: rgb(212 195 195);
-  width: 44.5%;
-  margin: 10px;
+  width: 47%;
+  height: 47%;
+  margin: 5px;
   border: 1px solid gray;
   border-radius: 5px;
+ 
+ 
 }
 
+.anilmation1{
+  background-color: rgb(212 195 195);
+  width: 47%;
+  height: 47%;
+  margin: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  animation-name: anil1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 .banner-div {
   background: antiquewhite;
   margin-top: 20px;
@@ -62,6 +79,26 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 1200px) {
+ 
+ 
+@keyframes anil1 {
+  0% {
+    width: 47%;
+    height: 47%;
+  }
+  50% {
+    width: 46%;
+    height: 46%;
+  }
+
+  100% {
+    width: 47%;
+    height: 47%;
+  }
+}
+}
 @media screen and (max-width: 780px) {
   .game-screen-div {
     width: 100%;
@@ -71,11 +108,36 @@
   .banner-div {
     width: 100%;
   }
-  .game-div-click{
+  .game-div-click {
     background-color: rgb(212 195 195);
-    width:43%;
+    width: 43%;
     margin: 10px;
     border: 1px solid gray;
     border-radius: 5px;
+   
+  }
+  
+.anilmation1{
+  background-color: rgb(212 195 195);
+    width: 43%;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+ 
+}
+  @keyframes anil1 {
+    0% {
+      width: 40%;
+      height: 40%;
+    }
+    50% {
+      width: 42%;
+      height: 42%;
+    }
+
+    100% {
+      width: 40%;
+      height: 40%;
+    }
   }
 }

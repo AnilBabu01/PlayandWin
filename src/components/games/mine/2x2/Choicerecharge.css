@@ -1,0 +1,67 @@
+.ok-btns button{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(0, 147, 255);
+    color: white;
+}
+
+.add-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e8dddd;
+    margin-bottom: 20px;
+}
+
+.flex-div-choice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.div-circle{
+    border: 1px solid gray;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recharge-choice-div-point{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recharge-choice-div-point button{
+    background-color: rgb(252, 148, 13);
+    height: 30px;
+    color: white;
+    width: 120px;
+    border-radius: 15px;
+}
+.recharge-choice-div-point-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recharge-choice-div-point-inner input{
+    height: 30px;
+    border: none;
+    margin-left: 20px;
+}
+.recharge-choice-div-point-inner input:focus{
+    outline: none;
+}
+.choice-hd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+  
+}

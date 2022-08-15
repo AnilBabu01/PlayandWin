@@ -5,7 +5,7 @@ const EveryoneorderOne = () => {
   return (
     <>
    <table className='table-one-game'>
-        <tr className=''>
+        <tr className='table-hd'>
           <td>Period</td>
           <td>User</td>
           <td>Select</td>

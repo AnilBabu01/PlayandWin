@@ -19,24 +19,70 @@
     background-color: rgb(212 195 195);
     width: 19.5%;
     margin: 10px;
+    height:19.5% ;
     border: 1px solid gray;
     border-radius: 5px;
   }
 
+  .anilmation2{
+    background-color: rgb(212 195 195);
+    width: 19.5%;
+    height:19.5% ;
+    margin: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    animation-name: anil1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+@media screen and (max-width: 1200px) {
+ 
+ 
+  @keyframes anil1 {
+    0% {
+      width: 20.3%;
+      height: 20.3%;
+    }
+    50% {
+      width: 19%;
+      height: 19%;
+    }
+
+    100% {
+      width: 20.3%;
+      height: 20.3%;
+    }
+  }
+  }
 
 @media screen and (max-width: 780px) {
-    .game-screen-div2 {
-      width: 100%;
-      height: 300px;
-    }
+  .game-screen-div2 {
+    width: 330px;
+    height: 300px;
+  }
   
   
     .game-div-click2{
-      background-color: rgb(212 195 195);
-      width: 18.5%;
-      margin: 10px;
-      border: 1px solid gray;
-      border-radius: 5px;
+    background-color: rgb(212 195 195);
+    width: 21.2%;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    }
+
+    @keyframes anil1 {
+      0% {
+        width: 19%;
+      }
+      50% {
+        width: 16%;
+        height: 16%;
+      }
+  
+      100% {
+        width: 19%;
+      }
     }
   }
   

@@ -1,0 +1,31 @@
+
+.game-result-flex2{
+    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.game-result-div2{
+    width: 13.5px;
+    height: 13px;
+    background-color: rgb(212 195 195);
+    margin: 3px;
+    font-size: 8px;
+    border-radius: 2px;
+}
+
+.game-result-div-img2{
+    width: 13.5px;
+    height: 13px;
+    background-image: url("../../../../../images//boom.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 3px;
+    font-size: 8px;
+    border-radius: 2px;
+}
+
+.game-result-main-div2{
+    width: 80px;
+    height: 80px;
+}
