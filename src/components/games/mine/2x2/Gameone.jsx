@@ -37,7 +37,7 @@ const Gameone = () => {
   const classes = useStyles();
   const navigate = useNavigate();
   const [startgame, setstartgame] = useState(true);
-  const [amount, setamount] = useState(false);
+  const [amount, setamount] = useState(true);
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);

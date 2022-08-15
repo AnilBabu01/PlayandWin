@@ -116,23 +116,15 @@
     border-radius: 5px;
    
   }
-  
-.anilmation1{
-  background-color: rgb(212 195 195);
-    width: 43%;
-    margin: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
  
-}
   @keyframes anil1 {
     0% {
       width: 40%;
       height: 40%;
     }
     50% {
-      width: 42%;
-      height: 42%;
+      width: 40%;
+      height: 40%;
     }
 
     100% {

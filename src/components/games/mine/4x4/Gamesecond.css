@@ -31,7 +31,7 @@
     margin: 8px;
     border: 1px solid gray;
     border-radius: 5px;
-    animation-name: anil1;
+    animation-name: anil2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
@@ -39,7 +39,7 @@
 @media screen and (max-width: 1200px) {
  
  
-  @keyframes anil1 {
+  @keyframes anil2 {
     0% {
       width: 20.3%;
       height: 20.3%;
@@ -71,7 +71,7 @@
     border-radius: 5px;
     }
 
-    @keyframes anil1 {
+    @keyframes anil2 {
       0% {
         width: 19%;
       }
