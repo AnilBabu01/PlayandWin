@@ -1,10 +1,13 @@
 import React from 'react'
-import Myrow from '../../../fast/fastparity/order/Myrow'
+
+import Myorders from './Myorders'
 
 const MyorderOne = () => {
   return (
     <>
-     
+     <div>
+        <Myorders/>
+     </div>
     </>
   )
 }

@@ -1,8 +1,13 @@
 import React from 'react'
+import Gamethir from './Gamethir'
 
 const MyorderThird = () => {
   return (
-    <div>MyorderThird</div>
+    <>
+    
+        <Gamethir/>
+    
+    </>
   )
 }
 
