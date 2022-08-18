@@ -21,13 +21,14 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 .img-click-start {
   position: absolute;
   width: 100px;
-  height: 100;
-  margin-left: 37%;
-  margin-top: 32%;
+ 
+ 
 }
 
 .img-click-start-hide{
@@ -35,8 +36,8 @@
 }
 .game-div-click {
   background-color: rgb(212 195 195);
-  width: 47%;
-  height: 47%;
+  width: 180px;
+  height: 160px;
   margin: 5px;
   border: 1px solid gray;
   border-radius: 5px;
@@ -44,15 +45,23 @@
  
 }
 
+.game-div-click-main1{
+    width: 180px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .anilmation1{
   background-color: rgb(212 195 195);
-  width: 47%;
-  height: 47%;
+  width: 180px;
+  height: 160px;
   margin: 5px;
   border: 1px solid gray;
   border-radius: 5px;
   animation-name: anil1;
   animation-duration: 2s;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 .banner-div {
@@ -67,6 +76,7 @@
   border-radius: 15px;
 }
 
+
 .banner-div h2 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -80,28 +90,27 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
- 
+
  
 @keyframes anil1 {
   0% {
-    width: 47%;
-    height: 47%;
+    width: 180px;
+    height: 160px;
   }
   50% {
-    width: 46%;
-    height: 46%;
+    width: 160px;
+    height: 100spx;
   }
 
   100% {
-    width: 47%;
-    height: 47%;
+    width: 180px;
+    height: 160px;
   }
 }
-}
+
 @media screen and (max-width: 780px) {
   .game-screen-div {
-    width: 100%;
+    width: 320px;
     height: 300px;
   }
 
@@ -110,26 +119,39 @@
   }
   .game-div-click {
     background-color: rgb(212 195 195);
-    width: 43%;
+    width: 150px;
+    height: 130px;
     margin: 10px;
     border: 1px solid gray;
     border-radius: 5px;
    
   }
  
+.game-div-click-main1{
+  width: 150px;
+  height: 130px;
+ 
+}
+.anilmation1{
+ 
+  width: 150px;
+  height: 130px;
+ 
+ 
+}
   @keyframes anil1 {
     0% {
-      width: 40%;
-      height: 40%;
+      width: 150px;
+      height: 130px;
     }
     50% {
-      width: 40%;
-      height: 40%;
+    width: 140px;
+    height: 120px;
     }
 
     100% {
-      width: 40%;
-      height: 40%;
+      width: 150px;
+    height: 130px;
     }
   }
 }

@@ -1,9 +1,46 @@
-import React from "react";
+import React, { useEffect, useState,useRef } from "react";
+import axios from "axios";
 import "../fastparity/FastParity.css";
 import RecordTapParity from "../parity/record/RecordTapParity";
 import EveryOneTapParity from "../parity/order/OrderTapParity";
 import "./Parity.css";
+import Timer1 from "./Timer1";
 const Parity = () => {
+  const [period, setperiod] = useState("");
+  const [startingtime, setstartingtime] = useState("");
+  const [currenttime, setcurrenttime] = useState("");
+  axios.defaults.headers.get["Authorization"] = `Bearer ${localStorage.getItem(
+    "tokenAuth"
+  )}`;
+
+  
+  axios.defaults.headers.post["Authorization"] = `Bearer ${localStorage.getItem(
+    "tokenAuth"
+  )}`;
+
+  const gettime = async () => {
+    const response = await axios.get(
+      "https://v1.fiewin.luckywin999.in/api/parity/games"
+    );
+
+   
+   if(response.data)
+   {
+    setperiod(()=>response.data.period);
+    setstartingtime(()=>response.data.startTime);
+    setcurrenttime(()=>response.data.currentTime);
+   }
+    console.log("hello")
+};
+
+useEffect(() => {
+  if(period==="")
+  {
+    console.log("hi")
+    gettime();
+  }
+ 
+},[])
   return (
     <>
       <div className="allcenter">
@@ -11,16 +48,12 @@ const Parity = () => {
           <div className="cenperiod">
             <div>
               <p className="per">Period</p>
-              <p className="pernum">21224646466</p>
+              <p className="pernum">{period}</p>
             </div>
             <div>
               <p className="Cout">Cout Down</p>
-              <p className="countset">
-                <span className="coutdown">0</span>
-                <span className="coutdown">0</span>:
-                <span className="coutdown">0</span>
-                <span className="coutdown">1</span>
-              </p>
+              <Timer1 startingtime={startingtime} currenttime={currenttime} onTimeOut={ () => alert('ok') }/>
+             
             </div>
           </div>
 

@@ -21,7 +21,7 @@ const Passwordlogin = () => {
   };
 
   const handleSubmit = async (e) => {
-    navigate("/fiewin")
+   
     e.preventDefault();
     try {
       if (number && password) {
