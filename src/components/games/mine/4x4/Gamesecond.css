@@ -1,88 +1,102 @@
-
 .game-screen-div2 {
-    background-color: rgb(240, 240, 240);
-    width: 400px;
-    height: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    
+  background-color: rgb(240, 240, 240);
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.img-click-start2 {
+  position: absolute;
+  width: 100px;
+  height: 100;
+  margin-left: 37%;
+  margin-top: 32%;
+}
+.game-div-click2 {
+  background-color: rgb(212 195 195);
+  width: 83.8px;
+  height: 70px;
+  /* margin: 10px; */
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.anilmation2 {
+  background-color: rgb(212 195 195);
+  width: 83.8px;
+  height: 70px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  animation-name: anil2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.game-div-click2-main {
+  width: 83.8px;
+  height: 70px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes anil2 {
+  0% {
+    width: 83.8px;
+    height: 70px;
   }
-  .img-click-start2{
-    position: absolute;
-    width: 100px;
-    height: 100;
-    margin-left: 37%;
-    margin-top: 32%;
-  }
-  .game-div-click2{
-    background-color: rgb(212 195 195);
-    width: 19.5%;
-    margin: 10px;
-    height:19.5% ;
-    border: 1px solid gray;
-    border-radius: 5px;
+  50% {
+    width: 65px;
+    height: 65px;
   }
 
-  .anilmation2{
-    background-color: rgb(212 195 195);
-    width: 19.5%;
-    height:19.5% ;
-    margin: 8px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    animation-name: anil1;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+  100% {
+    width: 83.8px;
+    height: 70px;
   }
-  
-@media screen and (max-width: 1200px) {
- 
- 
-  @keyframes anil1 {
-    0% {
-      width: 20.3%;
-      height: 20.3%;
-    }
-    50% {
-      width: 19%;
-      height: 19%;
-    }
-
-    100% {
-      width: 20.3%;
-      height: 20.3%;
-    }
-  }
-  }
+}
 
 @media screen and (max-width: 780px) {
   .game-screen-div2 {
     width: 330px;
     height: 300px;
   }
-  
-  
-    .game-div-click2{
+
+  .game-div-click2 {
     background-color: rgb(212 195 195);
-    width: 21.2%;
-    margin: 5px;
+    width: 78px;
+    height: 70px;
+
+   
     border: 1px solid gray;
     border-radius: 5px;
-    }
+  }
+  .game-div-click2-main {
+    width: 78px;
+    height: 70px;
+    margin: 2px;
+  }
 
-    @keyframes anil1 {
-      0% {
-        width: 19%;
-      }
-      50% {
-        width: 16%;
-        height: 16%;
-      }
-  
-      100% {
-        width: 19%;
-      }
-    }
+  .anilmation2 {
+   
+    width: 78px;
+    height: 70px;
+   
   }
   
+  @keyframes anil2 {
+    0% {
+      width: 78px;
+      height: 70px;
+    }
+    50% {
+      width: 70px;
+      height: 60px;
+    }
+
+    100% {
+      width: 78px;
+      height: 70px;
+    }
+  }
+}

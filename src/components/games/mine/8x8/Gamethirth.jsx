@@ -1,4 +1,4 @@
-import React ,{useState}from "react";
+import React, { useState } from "react";
 import Tapthird from "./Tapthird";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
@@ -6,8 +6,8 @@ import Fade from "@material-ui/core/Fade";
 import { useNavigate } from "react-router-dom";
 import close from "../../../../images/cLoseBtn.png";
 import Choicerecharge from "../2x2/Choicerecharge";
-import start from '../../../../images/boomStart.png';
-import './Gamethirth.css';
+import start from "../../../../images/boomStart.png";
+import "./Gamethirth.css";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -57,7 +57,7 @@ const Gamethirth = () => {
   };
   return (
     <>
-     <div>
+      <div>
         <Modal
           className={classes.modal}
           open={open}
@@ -74,87 +74,226 @@ const Gamethirth = () => {
           </Fade>
         </Modal>
       </div>
-     <div className="alllcen-in-game">
+
+      <div className="alllcen-in-game">
         <div className="game-scrollbar">
-        <div className="main-game-mine">
-          <div className="main-game-mine-content">
-            <div className="game-screen-div3">
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
-              <img 
-                 onClick={handlestart}
-                 className={
-                   startgame ? "img-click-start3" : "img-click-start-hide"
-                 }
-              
-              src={start} alt="img"/>
-            </div>
-            <div className="banner-div">
-              <h2>Check the boxes that you think have</h2>
-              <h2> no mines to get a bonus</h2>
-            </div>
-            <div>
-              <Tapthird/>
-             
+          <div className="main-game-mine">
+            <div className="main-game-mine-content">
+              <div className="game-screen-div3">
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+                <div className="game-div-click3-main">
+                   <div className={startgame ? "game-div-click3" : "anilmation3"}></div>
+                </div>
+               
+
+                    
+                <img
+                  onClick={handlestart}
+                  className={
+                    startgame ? "img-click-start3" : "img-click-start-hide"
+                  }
+                  src={start}
+                  alt="img"
+                />
+              </div>
+              <div className="banner-div">
+                <h2>Check the boxes that you think have</h2>
+                <h2> no mines to get a bonus</h2>
+              </div>
+              <div>
+                <Tapthird />
+              </div>
             </div>
           </div>
         </div>
-        </div>
-       
       </div>
     </>
   );

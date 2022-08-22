@@ -1,85 +1,104 @@
-
 .game-screen-div3 {
-    background-color: rgb(240, 240, 240);
-    width: 400px;
-    height: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    
-  }
-  .img-click-start3{
-    position: absolute;
-    width: 100px;
-    height: 100;
-    margin-left: 37%;
-    margin-top: 32%;
-  }
-  .game-div-click3 {
-    background-color: rgb(212 195 195);
-    width: 11%;
-    margin: 2px;
-    border: 1px solid gray;
-    border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.img-click-start3 {
+  position: absolute;
+  width: 100px;
+  height: 100;
+  margin-left: 37%;
+  margin-top: 32%;
+}
+.game-div-click3 {
+  background-color: rgb(212 195 195);
+  width: 46px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.game-div-click3-main {
+  width: 46px;
+  height: 40px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.anilmation3{
+.anilmation3 {
   background-color: rgb(212 195 195);
-    width: 11%;
-    margin: 2px;
-    border: 1px solid gray;
-    border-radius: 5px;
-  animation-name: anil1;
+  width: 46px;
+  height: 40px;
+  margin: 2px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  animation-name: anil3;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
- 
-@media screen and (max-width: 1200px) {
- 
- 
-  @keyframes anil1 {
+
+@keyframes anil3 {
+  0% {
+    width: 46px;
+    height: 40px;
+  }
+  50% {
+    width: 38px;
+    height: 32px;
+  }
+
+  100% {
+    width: 46px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .game-screen-div3 {
+    width: 320px;
+    height: 300px;
+  }
+
+  .game-div-click3 {
+    background-color: rgb(212 195 195);
+    width: 37.8px;
+    height: 35px;
+    margin: px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .anilmation3 {
+    width: 37.8px;
+    height: 35px;
+    margin: 0px;
+  }
+  .game-div-click3-main {
+    width: 38.8px;
+    height: 35px;
+    margin: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes anil3 {
     0% {
-      width: 11%;
+      width: 37.8px;
+      height: 35px;
     }
     50% {
-      width: 10%;
-      height: 11%;
+      width: 33px;
+      height: 32px;
     }
 
     100% {
-      width: 11%;
+    width: 37.8px;
+    height: 35px;
     }
   }
-  }
-@media screen and (max-width: 780px) {
-    .game-screen-div3 {
-      width: 100%;
-      height: 300px;
-    }
-  
-    .game-div-click3 {
-        background-color: rgb(212 195 195);
-        width: 10.7%;
-        height: 10%;
-        margin: px;
-        border: 1px solid gray;
-        border-radius: 5px;
-    }
-
-    @keyframes anil1 {
-      0% {
-        width: 10.7%;
-        height: 10%;
-      }
-      50% {
-        width: 10%;
-        height: 9%;
-      }
-  
-      100% {
-        width: 10.7%;
-        height: 10%;
-      }
-    }
-  }
-  
+}

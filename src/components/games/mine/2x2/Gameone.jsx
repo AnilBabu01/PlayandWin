@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Fade from "@material-ui/core/Fade";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import close from "../../../../images/cLoseBtn.png";
 import Tapone from "./everyoneorder/Tapone";
 import start from "../../../../images/boomStart.png";
@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
       outline: "none",
     },
   },
+
   paper: {
     backgroundColor: theme.palette.background.paper,
     display: "flex",
@@ -24,11 +25,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+   
     "&:focus": {
       outline: "none",
     },
-    width: "300px",
+   
     position: "relative",
     borderRadius: "15px",
   },
@@ -37,30 +38,27 @@ const Gameone = () => {
   const classes = useStyles();
   const navigate = useNavigate();
   const [startgame, setstartgame] = useState(true);
-  const [amount, setamount] = useState(false);
+  const [stopgame, setstopgame] = useState(true)
+  const [amount, setamount] = useState(true);
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
   };
-
+console.log("stop is ",stopgame)
   const handleClose = () => {
     setOpen(false);
   };
-    const handlestart=()=>{
-      if(amount)
-      {
-        setstartgame(false)
-      }
-      if(!amount)
-      {
-        handleOpen();
-      }
-    
+  const handlestart = () => {
+    if (amount) {
+      setstartgame(false);
     }
+    if (!amount) {
+      handleOpen();
+    }
+  };
   return (
     <>
-    
-         <div>
+      <div>
         <Modal
           className={classes.modal}
           open={open}
@@ -72,7 +70,7 @@ const Gameone = () => {
         >
           <Fade in={open}>
             <div className={classes.paper}>
-               <Choicerecharge/>
+              <Choicerecharge />
             </div>
           </Fade>
         </Modal>
@@ -82,14 +80,38 @@ const Gameone = () => {
           <div className="main-game-mine">
             <div className="main-game-mine-content">
               <div className="game-screen-div">
-                <div className={startgame ?"game-div-click":"anilmation1"}></div>
-                <div className={startgame ?"game-div-click":"anilmation1"}></div>
-                <div className={startgame ?"game-div-click":"anilmation1"}></div>
-                <div className={startgame ?"game-div-click":"anilmation1"}></div>
+                <div  className="game-div-click-main1">
+                  <div
+                    onClick={()=>setstopgame(false)} 
+                    className={startgame || !stopgame? "game-div-click" : "anilmation1"}
+                  ></div>
+                </div>
+                <div className="game-div-click-main1">
+                  <div
+                  onClick={()=>setstopgame(false)} 
+                    className={startgame || !stopgame? "game-div-click" : "anilmation1"}
+                  ></div>
+                </div>
+
+                <div className="game-div-click-main1">
+                  <div
+                  onClick={()=>setstopgame(false)} 
+                    className={startgame || !stopgame ? "game-div-click" : "anilmation1"}
+                  ></div>
+                </div>
+
+                <div className="game-div-click-main1">
+                  <div
+                  onClick={()=>setstopgame(false)} 
+                    className={startgame || !stopgame? "game-div-click" : "anilmation1"}
+                  ></div>
+                </div>
+
                 <img
                   onClick={handlestart}
                   className={
-                    startgame ?"img-click-start":"img-click-start-hide"
+                    
+                    startgame &&stopgame ? "img-click-start" : "img-click-start-hide"
                   }
                   src={start}
                   alt="img"

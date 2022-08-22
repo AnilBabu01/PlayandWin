@@ -33,11 +33,12 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "15px",
   },
 }));
+
 const Gamesecond = () => {
   const classes = useStyles();
   const navigate = useNavigate();
   const [startgame, setstartgame] = useState(true);
-  const [amount, setamount] = useState(false);
+  const [amount, setamount] = useState(true);
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -73,27 +74,63 @@ const Gamesecond = () => {
           </Fade>
         </Modal>
       </div>
+      
       <div className="alllcen-in-game">
         <div className="game-scrollbar">
           <div className="main-game-mine">
             <div className="main-game-mine-content">
               <div className="game-screen-div2">
+                <div className="game-div-click2-main">
                 <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
                 <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
                 <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
                 <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
-                <div  className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+               
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+                <div className="game-div-click2-main">
+                <div className={startgame ? "game-div-click2" : "anilmation2"}></div>
+                </div>
+               
+                
                 <img
                   onClick={handlestart}
                   className={
